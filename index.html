@@ -1414,6 +1414,174 @@
                 box-shadow: 0 25px 50px -12px rgba(247, 147, 30, 0.9);
             }
         }
+
+        /* Live Traffic Counter Styles */
+        .live-traffic {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: rgba(15, 15, 35, 0.95);
+            border: 1px solid rgba(102, 126, 234, 0.3);
+            border-radius: 15px;
+            padding: 12px 20px;
+            backdrop-filter: blur(20px);
+            z-index: 1000;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            animation: slideInFromBottom 1s ease-out;
+            min-width: 200px;
+        }
+
+        .live-traffic-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 8px;
+        }
+
+        .live-dot {
+            width: 8px;
+            height: 8px;
+            background: #10b981;
+            border-radius: 50%;
+            animation: pulse-dot 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse-dot {
+            0%, 100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 0.6;
+                transform: scale(1.2);
+            }
+        }
+
+        .live-count {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            color: #10b981;
+            animation: countGlow 3s ease-in-out infinite;
+        }
+
+        @keyframes countGlow {
+            0%, 100% {
+                text-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
+            }
+            50% {
+                text-shadow: 0 0 20px rgba(16, 185, 129, 0.8);
+            }
+        }
+
+        .live-text {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.6);
+            margin-top: 2px;
+        }
+
+        @keyframes slideInFromBottom {
+            from {
+                opacity: 0;
+                transform: translateY(100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Course Activity Feed */
+        .activity-feed {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background: rgba(15, 15, 35, 0.95);
+            border: 1px solid rgba(102, 126, 234, 0.3);
+            border-radius: 15px;
+            padding: 15px;
+            backdrop-filter: blur(20px);
+            z-index: 1000;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            max-width: 300px;
+            animation: slideInFromLeft 1s ease-out 2s both;
+        }
+
+        .activity-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.8);
+            opacity: 0;
+            animation: fadeInActivity 0.5s ease-out forwards;
+        }
+
+        .activity-item:last-child {
+            border-bottom: none;
+        }
+
+        .activity-avatar {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: var(--gradient-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+            color: white;
+            font-weight: 600;
+        }
+
+        .activity-text {
+            flex: 1;
+            line-height: 1.4;
+        }
+
+        .activity-course {
+            color: #10b981;
+            font-weight: 600;
+        }
+
+        .activity-time {
+            font-size: 11px;
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        @keyframes slideInFromLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInActivity {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive adjustments for mobile */
+        @media (max-width: 768px) {
+            .live-traffic,
+            .activity-feed {
+                display: none;
+            }
+        }
     </style>
 </head>
 <body>
@@ -1788,6 +1956,44 @@
         </div>
     </footer>
 
+    <!-- Live Traffic Counter -->
+    <div class="live-traffic" id="liveTraffic">
+        <div class="live-traffic-header">
+            <div class="live-dot"></div>
+            <span>Online Now</span>
+        </div>
+        <div class="live-count" id="liveCount">247</div>
+        <div class="live-text">people viewing</div>
+    </div>
+
+    <!-- Course Activity Feed -->
+    <div class="activity-feed" id="activityFeed">
+        <div class="activity-item" style="animation-delay: 0.5s;">
+            <div class="activity-avatar">JD</div>
+            <div class="activity-text">
+                <span>John just enrolled in</span><br>
+                <span class="activity-course">Digital Asset Traders Pro</span>
+            </div>
+            <div class="activity-time">2m ago</div>
+        </div>
+        <div class="activity-item" style="animation-delay: 1s;">
+            <div class="activity-avatar">SM</div>
+            <div class="activity-text">
+                <span>Sarah completed</span><br>
+                <span class="activity-course">Web Development Mastery</span>
+            </div>
+            <div class="activity-time">5m ago</div>
+        </div>
+        <div class="activity-item" style="animation-delay: 1.5s;">
+            <div class="activity-avatar">MK</div>
+            <div class="activity-text">
+                <span>Mike started learning</span><br>
+                <span class="activity-course">AI & ML Bootcamp</span>
+            </div>
+            <div class="activity-time">8m ago</div>
+        </div>
+    </div>
+
     <script>
         // Enhanced scroll animations and effects
         class EduVerseAnimations {
@@ -2125,6 +2331,8 @@
             initSmoothScrolling();
             initParallaxEffects();
             initFeatureCardEffects();
+            initLiveTraffic();
+            initActivityFeed();
             
             // Performance optimization: throttle scroll events
             let ticking = false;
@@ -2148,6 +2356,176 @@
                 document.body.style.opacity = '1';
             });
         });
+
+        // Live Traffic Counter System
+        function initLiveTraffic() {
+            const liveCount = document.getElementById('liveCount');
+            if (!liveCount) return;
+
+            let currentCount = 247; // Starting count
+            let targetCount = currentCount;
+
+            function updateTrafficCount() {
+                // Generate realistic traffic changes
+                const change = Math.floor(Math.random() * 8) - 4; // -4 to +3
+                const newTarget = Math.max(180, Math.min(350, targetCount + change));
+                
+                if (newTarget !== targetCount) {
+                    targetCount = newTarget;
+                    animateCountTo(currentCount, targetCount);
+                }
+            }
+
+            function animateCountTo(from, to) {
+                const duration = 2000; // 2 seconds
+                const steps = 30;
+                const stepDuration = duration / steps;
+                const increment = (to - from) / steps;
+                let current = from;
+                let step = 0;
+
+                const timer = setInterval(() => {
+                    step++;
+                    current += increment;
+                    
+                    if (step >= steps) {
+                        current = to;
+                        currentCount = to;
+                        clearInterval(timer);
+                    }
+                    
+                    liveCount.textContent = Math.round(current);
+                    
+                    // Add pulsing effect during update
+                    liveCount.style.transform = 'scale(1.05)';
+                    setTimeout(() => {
+                        liveCount.style.transform = 'scale(1)';
+                    }, 150);
+                }, stepDuration);
+            }
+
+            // Update traffic every 15-45 seconds
+            function scheduleNextUpdate() {
+                const delay = 15000 + Math.random() * 30000; // 15-45 seconds
+                setTimeout(() => {
+                    updateTrafficCount();
+                    scheduleNextUpdate();
+                }, delay);
+            }
+
+            scheduleNextUpdate();
+
+            // Initial random fluctuation after 5 seconds
+            setTimeout(() => {
+                updateTrafficCount();
+            }, 5000);
+        }
+
+        // Activity Feed System
+        function initActivityFeed() {
+            const activityFeed = document.getElementById('activityFeed');
+            if (!activityFeed) return;
+
+            const names = [
+                { name: 'Alex', avatar: 'AX' },
+                { name: 'Jessica', avatar: 'JS' },
+                { name: 'David', avatar: 'DV' },
+                { name: 'Emily', avatar: 'EM' },
+                { name: 'Michael', avatar: 'MC' },
+                { name: 'Sophie', avatar: 'SP' },
+                { name: 'Ryan', avatar: 'RY' },
+                { name: 'Lisa', avatar: 'LS' },
+                { name: 'Chris', avatar: 'CR' },
+                { name: 'Anna', avatar: 'AN' }
+            ];
+
+            const courses = [
+                'Digital Asset Traders Pro',
+                'Web Development Mastery',
+                'AI & ML Bootcamp',
+                'UI/UX Design System',
+                'Growth Hacking Course',
+                'Mobile App Development',
+                'Blockchain Development'
+            ];
+
+            const actions = [
+                'just enrolled in',
+                'completed',
+                'started learning',
+                'is studying',
+                'just finished'
+            ];
+
+            function createNewActivity() {
+                const person = names[Math.floor(Math.random() * names.length)];
+                const course = courses[Math.floor(Math.random() * courses.length)];
+                const action = actions[Math.floor(Math.random() * actions.length)];
+                const timeAgo = Math.floor(Math.random() * 15) + 1; // 1-15 minutes
+
+                return {
+                    avatar: person.avatar,
+                    name: person.name,
+                    action: action,
+                    course: course,
+                    time: `${timeAgo}m ago`
+                };
+            }
+
+            function addNewActivityItem() {
+                const activity = createNewActivity();
+                const newItem = document.createElement('div');
+                newItem.className = 'activity-item';
+                newItem.style.opacity = '0';
+                newItem.style.transform = 'translateY(20px)';
+                
+                newItem.innerHTML = `
+                    <div class="activity-avatar">${activity.avatar}</div>
+                    <div class="activity-text">
+                        <span>${activity.name} ${activity.action}</span><br>
+                        <span class="activity-course">${activity.course}</span>
+                    </div>
+                    <div class="activity-time">${activity.time}</div>
+                `;
+
+                // Remove oldest item if more than 3 items
+                const items = activityFeed.querySelectorAll('.activity-item');
+                if (items.length >= 3) {
+                    const oldestItem = items[items.length - 1];
+                    oldestItem.style.opacity = '0';
+                    oldestItem.style.transform = 'translateY(-20px)';
+                    setTimeout(() => {
+                        if (oldestItem.parentNode) {
+                            oldestItem.parentNode.removeChild(oldestItem);
+                        }
+                    }, 300);
+                }
+
+                // Add new item at the top
+                activityFeed.insertBefore(newItem, activityFeed.firstChild);
+
+                // Animate in
+                setTimeout(() => {
+                    newItem.style.transition = 'all 0.5s ease-out';
+                    newItem.style.opacity = '1';
+                    newItem.style.transform = 'translateY(0)';
+                }, 100);
+            }
+
+            // Add new activity every 20-60 seconds
+            function scheduleNextActivity() {
+                const delay = 20000 + Math.random() * 40000; // 20-60 seconds
+                setTimeout(() => {
+                    addNewActivityItem();
+                    scheduleNextActivity();
+                }, delay);
+            }
+
+            // Start after 10 seconds
+            setTimeout(() => {
+                scheduleNextActivity();
+            }, 10000);
+        }
 
         // Advanced CTA button effects
         document.addEventListener('DOMContentLoaded', () => {
