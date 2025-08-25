@@ -1962,7 +1962,7 @@
             <div class="live-dot"></div>
             <span>Online Now</span>
         </div>
-        <div class="live-count" id="liveCount">247</div>
+        <div class="live-count" id="liveCount">9</div>
         <div class="live-text">people viewing</div>
     </div>
 
@@ -2362,13 +2362,13 @@
             const liveCount = document.getElementById('liveCount');
             if (!liveCount) return;
 
-            let currentCount = 247; // Starting count
+            let currentCount = 9; // Starting count
             let targetCount = currentCount;
 
             function updateTrafficCount() {
-                // Generate realistic traffic changes
-                const change = Math.floor(Math.random() * 8) - 4; // -4 to +3
-                const newTarget = Math.max(180, Math.min(350, targetCount + change));
+                // Generate realistic traffic changes for small numbers
+                const change = Math.floor(Math.random() * 5) - 2; // -2 to +2
+                const newTarget = Math.max(8, Math.min(12, targetCount + change));
                 
                 if (newTarget !== targetCount) {
                     targetCount = newTarget;
@@ -2377,8 +2377,8 @@
             }
 
             function animateCountTo(from, to) {
-                const duration = 2000; // 2 seconds
-                const steps = 30;
+                const duration = 1500; // 1.5 seconds for smoother small number changes
+                const steps = 20;
                 const stepDuration = duration / steps;
                 const increment = (to - from) / steps;
                 let current = from;
@@ -2397,16 +2397,16 @@
                     liveCount.textContent = Math.round(current);
                     
                     // Add pulsing effect during update
-                    liveCount.style.transform = 'scale(1.05)';
+                    liveCount.style.transform = 'scale(1.1)';
                     setTimeout(() => {
                         liveCount.style.transform = 'scale(1)';
-                    }, 150);
+                    }, 200);
                 }, stepDuration);
             }
 
-            // Update traffic every 15-45 seconds
+            // Update traffic every 20-60 seconds (longer intervals for realism)
             function scheduleNextUpdate() {
-                const delay = 15000 + Math.random() * 30000; // 15-45 seconds
+                const delay = 20000 + Math.random() * 40000; // 20-60 seconds
                 setTimeout(() => {
                     updateTrafficCount();
                     scheduleNextUpdate();
@@ -2415,10 +2415,10 @@
 
             scheduleNextUpdate();
 
-            // Initial random fluctuation after 5 seconds
+            // Initial random fluctuation after 8 seconds
             setTimeout(() => {
                 updateTrafficCount();
-            }, 5000);
+            }, 8000);
         }
 
         // Activity Feed System
