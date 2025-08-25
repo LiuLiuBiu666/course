@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refund Policy - EduVerse Academy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6366f1;
+            --primary-dark: #4f46e5;
+            --secondary: #ec4899;
+            --accent: #06b6d4;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            
+            --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gradient-rainbow: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #f5576c 75%, #4facfe 100%);
+            --gradient-success: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+            
+            --glass-bg: rgba(255, 255, 255, 0.1);
+            --glass-border: rgba(255, 255, 255, 0.2);
+            
+            --dark: #0f0f23;
+            --dark-light: #1a1a2e;
+            --text-light: #ffffff;
+            --text-dark: #0f172a;
+            --text-muted: #64748b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-light);
+            background: var(--dark);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        header {
+            background: rgba(15, 15, 35, 0.9);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--text-light);
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 36px;
+            height: 36px;
+            background: var(--gradient-primary);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 800;
+            font-size: 14px;
+        }
+
+        .back-btn {
+            background: var(--glass-bg);
+            color: var(--text-light);
+            padding: 10px 20px;
+            border: 1px solid var(--glass-border);
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(20px);
+        }
+
+        .back-btn:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-2px);
+        }
+
+        .main-content {
+            padding: 60px 0 80px;
+        }
+
+        .policy-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .policy-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            background: var(--gradient-rainbow);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .policy-subtitle {
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 10px;
+        }
+
+        .last-updated {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .policy-content {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 40px;
+            backdrop-filter: blur(20px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section:last-child {
+            margin-bottom: 0;
+        }
+
+        .section-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--text-light);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--success);
+        }
+
+        .section-content {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        .section-content p {
+            margin-bottom: 16px;
+        }
+
+        .section-content ul {
+            margin-left: 20px;
+            margin-bottom: 16px;
+        }
+
+        .section-content li {
+            margin-bottom: 8px;
+        }
+
+        .highlight {
+            background: rgba(16, 185, 129, 0.2);
+            padding: 2px 8px;
+            border-radius: 6px;
+            color: var(--success);
+            font-weight: 600;
+        }
+
+        .warning-box {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .warning-box h4 {
+            color: var(--danger);
+            margin-bottom: 10px;
+        }
+
+        .success-box {
+            background: rgba(16, 185, 129, 0.1);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .success-box h4 {
+            color: var(--success);
+            margin-bottom: 10px;
+        }
+
+        .refund-timeline {
+            background: var(--gradient-success);
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px 0;
+        }
+
+        .refund-timeline h4 {
+            color: white;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .timeline-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 12px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .timeline-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .timeline-icon {
+            width: 24px;
+            height: 24px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .contact-info {
+            background: var(--gradient-primary);
+            padding: 20px;
+            border-radius: 15px;
+            margin-top: 20px;
+        }
+
+        .contact-info h4 {
+            color: white;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .contact-info p {
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .policy-title {
+                font-size: 36px;
+            }
+            
+            .policy-content {
+                padding: 24px;
+            }
+            
+            .section-title {
+                font-size: 20px;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">EA</div>
+                    EduVerse Academy
+                </a>
+                <a href="index.html" class="back-btn">← Back to Home</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="policy-header">
+                <h1 class="policy-title">Refund Policy</h1>
+                <p class="policy-subtitle">We stand behind the quality of our courses</p>
+                <p class="last-updated">Last updated: August 26, 2025</p>
+            </div>
+
+            <div class="policy-content">
+                <div class="section">
+                    <h2 class="section-title">1. Our Commitment to You</h2>
+                    <div class="section-content">
+                        <p>At EduVerse Academy, we are confident in the quality and value of our educational content. We want you to be completely satisfied with your learning experience.</p>
+                        
+                        <div class="success-box">
+                            <h4>✅ 30-Day Money-Back Guarantee</h4>
+                            <p>We offer a full refund within 30 days of purchase if you're not satisfied with your course, subject to the conditions outlined in this policy.</p>
+                        </div>
+                        
+                        <p>This policy covers all our premium courses and educational content purchased through our platform or authorized partners like Whop.</p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">2. Eligibility for Refunds</h2>
+                    <div class="section-content">
+                        <p>You are eligible for a full refund if:</p>
+                        <ul>
+                            <li><span class="highlight">Within 30 Days</span>: Request is made within 30 days of original purchase date</li>
+                            <li><span class="highlight">Limited Progress</span>: You have completed less than 25% of the course content</li>
+                            <li><span class="highlight">Technical Issues</span>: Unresolved technical problems preventing course access</li>
+                            <li><span class="highlight">Course Quality</span>: Course content significantly differs from description</li>
+                            <li><span class="highlight">Billing Errors</span>: Unauthorized or duplicate charges</li>
+                        </ul>
+                        
+                        <div class="refund-timeline">
+                            <h4>📅 Refund Timeline Process</h4>
+                            <div class="timeline-item">
+                                <div class="timeline-icon">1</div>
+                                <div>
+                                    <strong>Request Submitted</strong> - Submit refund request with reason
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-icon">2</div>
+                                <div>
+                                    <strong>Review Process</strong> - We review your request within 2-3 business days
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-icon">3</div>
+                                <div>
+                                    <strong>Decision Notification</strong> - You receive approval or additional information request
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-icon">4</div>
+                                <div>
+                                    <strong>Refund Processing</strong> - Approved refunds processed within 5-7 business days
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">3. Refund Exclusions</h2>
+                    <div class="section-content">
+                        <p>Refunds are not available in the following circumstances:</p>
+                        <ul>
+                            <li><span class="highlight">Late Requests</span>: Requests made after 30 days from purchase</li>
+                            <li><span class="highlight">High Completion</span>: More than 25% of course content has been accessed</li>
+                            <li><span class="highlight">Certificate Issued</span>: Course completion certificate has been generated</li>
+                            <li><span class="highlight">VIP/Premium Access</span>: Special membership tiers with exclusive content</li>
+                            <li><span class="highlight">Downloaded Content</span>: Courses with downloadable materials that have been accessed</li>
+                            <li><span class="highlight">Promotional Prices</span>: Courses purchased at heavily discounted or promotional rates</li>
+                            <li><span class="highlight">Violation of Terms</span>: Account suspended due to terms of service violations</li>
+                        </ul>
+                        
+                        <div class="warning-box">
+                            <h4>⚠️ Special Conditions</h4>
+                            <p>Some premium courses, especially those with live components or limited enrollment, may have different refund terms clearly stated at the time of purchase.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">4. How to Request a Refund</h2>
+                    <div class="section-content">
+                        <p>To request a refund, follow these steps:</p>
+                        <ul>
+                            <li><strong>Step 1:</strong> Contact our support team via email or through your account dashboard</li>
+                            <li><strong>Step 2:</strong> Provide your order number, purchase date, and reason for refund</li>
+                            <li><strong>Step 3:</strong> Include any relevant details about technical issues or course concerns</li>
+                            <li><strong>Step 4:</strong> Wait for our team to review and respond within 2-3 business days</li>
+                        </ul>
+                        
+                        <p>Required information for refund requests:</p>
+                        <ul>
+                            <li>Full name and email address used for purchase</li>
+                            <li>Order/transaction number</li>
+                            <li>Course name and purchase date</li>
+                            <li>Detailed reason for refund request</li>
+                            <li>Screenshots if reporting technical issues</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">5. Refund Processing</h2>
+                    <div class="section-content">
+                        <p>Once your refund is approved:</p>
+                        <ul>
+                            <li><span class="highlight">Processing Time</span>: 5-7 business days for refund to appear</li>
+                            <li><span class="highlight">Original Payment Method</span>: Refunds return to the original payment method</li>
+                            <li><span class="highlight">Bank Processing</span>: Additional 3-5 days may be required by your bank</li>
+                            <li><span class="highlight">Access Removal</span>: Course access will be immediately removed upon processing</li>
+                            <li><span class="highlight">Confirmation</span>: You will receive email confirmation when refund is processed</li>
+                        </ul>
+                        
+                        <div class="success-box">
+                            <h4>✅ Payment Method Specific Information</h4>
+                            <ul style="margin: 10px 0 0 0;">
+                                <li><strong>Credit/Debit Cards:</strong> 5-7 business days</li>
+                                <li><strong>PayPal:</strong> 3-5 business days</li>
+                                <li><strong>Bank Transfer:</strong> 7-10 business days</li>
+                                <li><strong>Digital Wallets:</strong> 3-5 business days</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">6. Partial Refunds</h2>
+                    <div class="section-content">
+                        <p>In certain circumstances, we may offer partial refunds:</p>
+                        <ul>
+                            <li><span class="highlight">Bundle Courses</span>: Refund for unused portions of course bundles</li>
+                            <li><span class="highlight">Technical Disruptions</span>: Compensation for significant service interruptions</li>
+                            <li><span class="highlight">Content Updates</span>: Refunds when course content is significantly reduced</li>
+                            <li><span class="highlight">Prorated Access</span>: For subscription-based services based on usage</li>
+                        </ul>
+                        <p>Partial refund amounts are calculated based on the unused portion of content and time remaining in access period.</p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">7. Third-Party Purchases</h2>
+                    <div class="section-content">
+                        <p>For courses purchased through third-party platforms:</p>
+                        <ul>
+                            <li><span class="highlight">Whop Platform</span>: Follow Whop's refund process, subject to their terms</li>
+                            <li><span class="highlight">App Stores</span>: Refunds processed through Apple App Store or Google Play policies</li>
+                            <li><span class="highlight">Partner Sites</span>: Contact the original point of purchase for refund requests</li>
+                            <li><span class="highlight">Direct Support</span>: We can assist with technical issues but cannot process refunds for third-party purchases</li>
+                        </ul>
+                        
+                        <div class="warning-box">
+                            <h4>⚠️ Important Note</h4>
+                            <p>Third-party purchases are subject to the refund policies of those platforms. We recommend reviewing their terms before making a purchase.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">8. Course Exchanges</h2>
+                    <div class="section-content">
+                        <p>Instead of a refund, you may be eligible for course exchange:</p>
+                        <ul>
+                            <li>Exchange for a course of equal or lesser value</li>
+                            <li>Available within the first 14 days of purchase</li>
+                            <li>Subject to availability and course compatibility</li>
+                            <li>One exchange per purchase allowed</li>
+                        </ul>
+                        <p>Course exchanges help ensure you find the right learning path while maintaining access to our educational content.</p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">9. Quality Assurance</h2>
+                    <div class="section-content">
+                        <p>We continuously monitor course quality to minimize refund requests:</p>
+                        <ul>
+                            <li><span class="highlight">Expert Review</span>: All courses reviewed by industry professionals</li>
+                            <li><span class="highlight">Student Feedback</span>: Regular surveys and feedback integration</li>
+                            <li><span class="highlight">Content Updates</span>: Regular updates to keep content current and relevant</li>
+                            <li><span class="highlight">Technical Testing</span>: Comprehensive testing before course releases</li>
+                            <li><span class="highlight">Support Team</span>: Dedicated support for technical and learning assistance</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">10. Alternative Solutions</h2>
+                    <div class="section-content">
+                        <p>Before requesting a refund, consider these alternatives:</p>
+                        <ul>
+                            <li><span class="highlight">Technical Support</span>: Our team can resolve most technical issues</li>
+                            <li><span class="highlight">Learning Assistance</span>: Get help with difficult concepts or course navigation</li>
+                            <li><span class="highlight">Course Extensions</span>: Additional time for course completion if needed</li>
+                            <li><span class="highlight">Content Clarification</span>: Detailed explanations of course objectives and outcomes</li>
+                            <li><span class="highlight">Community Support</span>: Connect with other students and instructors</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">11. Contact Information</h2>
+                    <div class="section-content">
+                        <p>For refund requests or questions about this policy, contact us:</p>
+                        
+                        <div class="contact-info">
+                            <h4>EduVerse Academy Refunds Team</h4>
+                            <p><strong>Email:</strong> refunds@eduverseacademy.com</p>
+                            <p><strong>Support:</strong> hello@eduverseacademy.com</p>
+                            <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+                            <p><strong>Hours:</strong> Monday-Friday, 9 AM - 6 PM EST</p>
+                        </div>
+                        
+                        <p>We typically respond to refund requests within 2-3 business days and work diligently to resolve any concerns you may have.</p>
+                        
+                        <div class="success-box">
+                            <h4>✅ Our Promise</h4>
+                            <p>We are committed to providing high-quality education and excellent customer service. If you have any concerns about your course experience, please reach out to us before requesting a refund - we're here to help!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

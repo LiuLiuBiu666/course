@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - EduVerse Academy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6366f1;
+            --primary-dark: #4f46e5;
+            --secondary: #ec4899;
+            --accent: #06b6d4;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            
+            --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gradient-rainbow: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #f5576c 75%, #4facfe 100%);
+            
+            --glass-bg: rgba(255, 255, 255, 0.1);
+            --glass-border: rgba(255, 255, 255, 0.2);
+            
+            --dark: #0f0f23;
+            --dark-light: #1a1a2e;
+            --text-light: #ffffff;
+            --text-dark: #0f172a;
+            --text-muted: #64748b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-light);
+            background: var(--dark);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        header {
+            background: rgba(15, 15, 35, 0.9);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--text-light);
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 36px;
+            height: 36px;
+            background: var(--gradient-primary);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 800;
+            font-size: 14px;
+        }
+
+        .back-btn {
+            background: var(--glass-bg);
+            color: var(--text-light);
+            padding: 10px 20px;
+            border: 1px solid var(--glass-border);
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(20px);
+        }
+
+        .back-btn:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-2px);
+        }
+
+        .main-content {
+            padding: 60px 0 80px;
+        }
+
+        .policy-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .policy-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            background: var(--gradient-rainbow);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .policy-subtitle {
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 10px;
+        }
+
+        .last-updated {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .policy-content {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 40px;
+            backdrop-filter: blur(20px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section:last-child {
+            margin-bottom: 0;
+        }
+
+        .section-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--text-light);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--accent);
+        }
+
+        .section-content {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        .section-content p {
+            margin-bottom: 16px;
+        }
+
+        .section-content ul {
+            margin-left: 20px;
+            margin-bottom: 16px;
+        }
+
+        .section-content li {
+            margin-bottom: 8px;
+        }
+
+        .highlight {
+            background: rgba(102, 126, 234, 0.2);
+            padding: 2px 8px;
+            border-radius: 6px;
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        .contact-info {
+            background: var(--gradient-primary);
+            padding: 20px;
+            border-radius: 15px;
+            margin-top: 20px;
+        }
+
+        .contact-info h4 {
+            color: white;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .contact-info p {
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .policy-title {
+                font-size: 36px;
+            }
+            
+            .policy-content {
+                padding: 24px;
+            }
+            
+            .section-title {
+                font-size: 20px;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">EA</div>
+                    EduVerse Academy
+                </a>
+                <a href="index.html" class="back-btn">← Back to Home</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="policy-header">
+                <h1 class="policy-title">Privacy Policy</h1>
+                <p class="policy-subtitle">Your privacy is important to us</p>
+                <p class="last-updated">Last updated: August 26, 2025</p>
+            </div>
+
+            <div class="policy-content">
+                <div class="section">
+                    <h2 class="section-title">1. Information We Collect</h2>
+                    <div class="section-content">
+                        <p>At EduVerse Academy, we collect information to provide you with the best learning experience possible. The types of information we collect include:</p>
+                        <ul>
+                            <li><span class="highlight">Personal Information</span>: Name, email address, phone number, and payment information when you register or purchase courses</li>
+                            <li><span class="highlight">Usage Data</span>: How you interact with our platform, courses completed, time spent learning, and progress tracking</li>
+                            <li><span class="highlight">Technical Data</span>: IP address, browser type, device information, and cookies for platform optimization</li>
+                            <li><span class="highlight">Communication Data</span>: Messages you send us, feedback, and support requests</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">2. How We Use Your Information</h2>
+                    <div class="section-content">
+                        <p>We use your information for the following purposes:</p>
+                        <ul>
+                            <li>Providing access to courses and educational content</li>
+                            <li>Processing payments and managing your account</li>
+                            <li>Personalizing your learning experience and recommendations</li>
+                            <li>Sending course updates, certificates, and important notifications</li>
+                            <li>Improving our platform and developing new features</li>
+                            <li>Customer support and responding to your inquiries</li>
+                            <li>Preventing fraud and ensuring platform security</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">3. Information Sharing</h2>
+                    <div class="section-content">
+                        <p>We respect your privacy and do not sell your personal information. We may share your information only in these circumstances:</p>
+                        <ul>
+                            <li><span class="highlight">Service Providers</span>: Trusted third-party services that help us operate the platform (payment processors, email services, analytics)</li>
+                            <li><span class="highlight">Legal Requirements</span>: When required by law, court orders, or to protect our rights and safety</li>
+                            <li><span class="highlight">Business Transfers</span>: In the event of a merger, acquisition, or sale of assets</li>
+                            <li><span class="highlight">Consent</span>: When you explicitly consent to sharing your information</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">4. Data Security</h2>
+                    <div class="section-content">
+                        <p>We implement industry-standard security measures to protect your information:</p>
+                        <ul>
+                            <li>SSL encryption for all data transmission</li>
+                            <li>Secure payment processing through certified providers</li>
+                            <li>Regular security audits and monitoring</li>
+                            <li>Access controls and employee training on data protection</li>
+                            <li>Automatic logout and session management</li>
+                        </ul>
+                        <p>While we strive to protect your information, no method of transmission over the internet is 100% secure. We cannot guarantee absolute security but commit to using best practices.</p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">5. Your Rights</h2>
+                    <div class="section-content">
+                        <p>You have the following rights regarding your personal information:</p>
+                        <ul>
+                            <li><span class="highlight">Access</span>: Request a copy of your personal data we hold</li>
+                            <li><span class="highlight">Rectification</span>: Correct any inaccurate or incomplete information</li>
+                            <li><span class="highlight">Erasure</span>: Request deletion of your personal data</li>
+                            <li><span class="highlight">Portability</span>: Receive your data in a structured, machine-readable format</li>
+                            <li><span class="highlight">Objection</span>: Object to processing of your personal data</li>
+                            <li><span class="highlight">Restriction</span>: Request restriction of processing your data</li>
+                        </ul>
+                        <p>To exercise these rights, please contact us using the information provided below.</p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">6. Cookies and Tracking</h2>
+                    <div class="section-content">
+                        <p>We use cookies and similar technologies to enhance your experience:</p>
+                        <ul>
+                            <li><span class="highlight">Essential Cookies</span>: Required for platform functionality and security</li>
+                            <li><span class="highlight">Performance Cookies</span>: Help us understand how you use our platform</li>
+                            <li><span class="highlight">Functional Cookies</span>: Remember your preferences and settings</li>
+                            <li><span class="highlight">Marketing Cookies</span>: Deliver relevant content and advertisements</li>
+                        </ul>
+                        <p>You can manage cookie preferences through your browser settings, though this may affect platform functionality.</p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">7. Data Retention</h2>
+                    <div class="section-content">
+                        <p>We retain your information for as long as necessary to provide our services and fulfill legal obligations:</p>
+                        <ul>
+                            <li>Account information: Until account deletion or inactivity for 3 years</li>
+                            <li>Course progress: Retained for educational records and certificates</li>
+                            <li>Payment information: As required by tax and accounting laws</li>
+                            <li>Support communications: Up to 2 years for quality assurance</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">8. Children's Privacy</h2>
+                    <div class="section-content">
+                        <p>Our services are not intended for children under 13. We do not knowingly collect personal information from children under 13. If you believe we have collected information from a child under 13, please contact us immediately.</p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">9. International Transfers</h2>
+                    <div class="section-content">
+                        <p>Your information may be transferred and processed in countries other than your own. We ensure appropriate safeguards are in place to protect your data, including:</p>
+                        <ul>
+                            <li>Adequacy decisions by relevant authorities</li>
+                            <li>Standard contractual clauses</li>
+                            <li>Binding corporate rules</li>
+                            <li>Certification schemes</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">10. Changes to This Policy</h2>
+                    <div class="section-content">
+                        <p>We may update this Privacy Policy periodically. We will notify you of any material changes by:</p>
+                        <ul>
+                            <li>Posting the updated policy on our website</li>
+                            <li>Sending an email notification to registered users</li>
+                            <li>Displaying a prominent notice on our platform</li>
+                        </ul>
+                        <p>Your continued use of our services after changes become effective constitutes acceptance of the updated policy.</p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">11. Contact Us</h2>
+                    <div class="section-content">
+                        <p>If you have questions about this Privacy Policy or want to exercise your rights, please contact us:</p>
+                        
+                        <div class="contact-info">
+                            <h4>EduVerse Academy Privacy Team</h4>
+                            <p><strong>Email:</strong> privacy@eduverseacademy.com</p>
+                            <p><strong>Support:</strong> hello@eduverseacademy.com</p>
+                            <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+                            <p><strong>Address:</strong> 123 Learning Street, Education City, EC 12345</p>
+                        </div>
+                        
+                        <p>We will respond to your requests within 30 days and provide assistance in your preferred language when possible.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
