@@ -588,7 +588,7 @@
 
         /* Courses Section */
         .courses {
-            padding: 120px 0;
+            padding: 80px 0;
             background: var(--dark);
             position: relative;
         }
@@ -606,7 +606,7 @@
 
         .section-header {
             text-align: center;
-            margin-bottom: 80px;
+            margin-bottom: 50px;
             position: relative;
             z-index: 2;
         }
@@ -635,8 +635,8 @@
 
         .course-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
-            gap: 40px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
             position: relative;
             z-index: 2;
         }
@@ -644,7 +644,7 @@
         .course-card {
             background: var(--glass-bg);
             border: 1px solid var(--glass-border);
-            border-radius: 24px;
+            border-radius: 16px;
             overflow: hidden;
             transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
             position: relative;
@@ -671,13 +671,13 @@
         }
 
         .course-card:hover {
-            transform: translateY(-12px) rotateX(5deg);
+            transform: translateY(-6px) rotateX(5deg);
             box-shadow: var(--shadow-intense), var(--shadow-glow);
             border-color: rgba(102, 126, 234, 0.5);
         }
 
         .course-image {
-            height: 240px;
+            height: 120px;
             background: var(--gradient-primary);
             display: flex;
             align-items: center;
@@ -703,7 +703,7 @@
         }
 
         .course-icon {
-            font-size: 64px;
+            font-size: 32px;
             opacity: 0.9;
             filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
             animation: iconFloat 6s ease-in-out infinite;
@@ -722,13 +722,13 @@
 
         .course-level {
             position: absolute;
-            top: 20px;
-            right: 20px;
+            top: 12px;
+            right: 12px;
             background: rgba(255, 255, 255, 0.95);
             color: var(--primary);
-            padding: 6px 16px;
+            padding: 4px 12px;
             border-radius: 50px;
-            font-size: 12px;
+            font-size: 10px;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -737,7 +737,7 @@
         }
 
         .course-content {
-            padding: 32px;
+            padding: 16px;
             color: var(--text-light);
         }
 
@@ -755,25 +755,25 @@
 
         .course-title {
             font-family: 'Space Grotesk', sans-serif;
-            font-size: 24px;
+            font-size: 18px;
             font-weight: 700;
             color: var(--text-light);
-            margin-bottom: 16px;
+            margin-bottom: 12px;
             line-height: 1.3;
         }
 
         .course-description {
             color: rgba(255, 255, 255, 0.7);
-            font-size: 16px;
-            margin-bottom: 24px;
-            line-height: 1.6;
+            font-size: 14px;
+            margin-bottom: 16px;
+            line-height: 1.5;
         }
 
         .course-meta {
             display: flex;
-            gap: 20px;
-            margin-bottom: 24px;
-            font-size: 14px;
+            gap: 12px;
+            margin-bottom: 16px;
+            font-size: 12px;
             color: rgba(255, 255, 255, 0.6);
             flex-wrap: wrap;
         }
@@ -781,10 +781,10 @@
         .course-meta-item {
             display: flex;
             align-items: center;
-            gap: 6px;
+            gap: 4px;
             background: var(--glass-bg);
-            padding: 6px 12px;
-            border-radius: 20px;
+            padding: 4px 8px;
+            border-radius: 16px;
             border: 1px solid var(--glass-border);
         }
 
@@ -792,7 +792,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding-top: 24px;
+            padding-top: 16px;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
 
@@ -804,7 +804,7 @@
 
         .course-price-current {
             font-family: 'Space Grotesk', sans-serif;
-            font-size: 28px;
+            font-size: 20px;
             font-weight: 800;
             background: var(--gradient-success);
             -webkit-background-clip: text;
@@ -813,7 +813,7 @@
         }
 
         .course-price-original {
-            font-size: 18px;
+            font-size: 14px;
             color: rgba(255, 255, 255, 0.4);
             text-decoration: line-through;
         }
@@ -821,10 +821,10 @@
         .enroll-btn {
             background: var(--gradient-primary);
             color: white;
-            padding: 14px 28px;
+            padding: 10px 20px;
             border-radius: 50px;
             font-weight: 700;
-            font-size: 15px;
+            font-size: 13px;
             text-decoration: none;
             transition: all 0.4s ease;
             border: none;
@@ -1242,7 +1242,7 @@
         /* Responsive Design */
         @media (max-width: 1200px) {
             .course-grid {
-                grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+                grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
             }
         }
 
@@ -1292,8 +1292,8 @@
             }
             
             .course-grid {
-                grid-template-columns: 1fr;
-                gap: 32px;
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                gap: 16px;
             }
             
             .features-grid {
@@ -1327,18 +1327,22 @@
             }
             
             .course-content {
-                padding: 24px;
+                padding: 12px;
             }
             
             .course-footer {
                 flex-direction: column;
-                gap: 16px;
+                gap: 12px;
                 align-items: stretch;
             }
             
             .enroll-btn {
                 width: 100%;
                 text-align: center;
+            }
+            
+            .course-grid {
+                grid-template-columns: 1fr;
             }
         }
 
@@ -1621,7 +1625,7 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-badge">
-                    Trusted by 280+ professionals worldwide
+                    Trusted by 2,850+ professionals worldwide
                 </div>
                 <h1>Transform Your Future with Next-Generation Learning</h1>
                 <p>Master cutting-edge skills through immersive courses designed by industry experts. Join the revolution of interactive, AI-powered education.</p>
@@ -1637,16 +1641,16 @@
         <div class="container">
             <div class="stats-grid">
                 <div class="stat-item animate-on-scroll">
-                    <h3 data-target="280">0</h3>
+                    <h3 data-target="2850">0</h3>
                     <p>Active Learners</p>
                 </div>
                 <div class="stat-item animate-on-scroll">
-                    <h3 data-target="12">0</h3>
+                    <h3 data-target="180">0</h3>
                     <p>Expert Instructors</p>
                 </div>
                 <div class="stat-item animate-on-scroll">
-                    <h3 data-target="95">0</h3>
-                    <p>Success Rate</p>
+                    <h3 data-target="150">0</h3>
+                    <p>Premium Courses</p>
                 </div>
                 <div class="stat-item animate-on-scroll">
                     <h3 data-target="4.8">0</h3>
@@ -1660,7 +1664,7 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title animate-on-scroll">Premium Course Collection</h2>
-                <p class="section-subtitle animate-on-scroll">Discover world-class courses crafted by industry leaders. Each course combines cutting-edge content with hands-on projects to accelerate your professional growth.</p>
+                <p class="section-subtitle animate-on-scroll">Discover world-class courses from leading platforms like Coursera, Udemy, edX, LinkedIn Learning, MasterClass, FutureLearn, and Skillshare. Over 150+ premium courses crafted by industry leaders to accelerate your professional growth across technology, business, creative arts, and specialized fields.</p>
             </div>
             
             <div class="course-grid">
@@ -1833,6 +1837,2315 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- COURSERA COURSES -->
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #0056D3 0%, #4285F4 100%);">
+                        <span class="course-icon">🎓</span>
+                        <div class="course-level">Beginner</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Data Science - Coursera</div>
+                        <h3 class="course-title">Machine Learning Specialization</h3>
+                        <p class="course-description">Learn the fundamentals of machine learning from Andrew Ng. Master supervised learning, unsupervised learning, and best practices in ML development.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 35 hours</div>
+                            <div class="course-meta-item">👥 2.1M students</div>
+                            <div class="course-meta-item">⭐ 4.9 (180k)</div>
+                            <div class="course-meta-item">🏆 Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">Free</span>
+                                <span class="course-price-original">$49/month</span>
+                            </div>
+                            <a href="https://www.coursera.org/specializations/machine-learning-introduction" class="enroll-btn" target="_blank">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #0056D3 0%, #4285F4 100%);">
+                        <span class="course-icon">💻</span>
+                        <div class="course-level">Beginner</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Computer Science - Coursera</div>
+                        <h3 class="course-title">Google IT Support Professional Certificate</h3>
+                        <p class="course-description">Prepare for a career in the high-growth field of IT support. Learn troubleshooting, customer service, networking, operating systems, and security.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 240 hours</div>
+                            <div class="course-meta-item">👥 850k students</div>
+                            <div class="course-meta-item">⭐ 4.7 (95k)</div>
+                            <div class="course-meta-item">🏆 Professional Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$39/month</span>
+                            </div>
+                            <a href="https://www.coursera.org/professional-certificates/google-it-support" class="enroll-btn" target="_blank">Start Career</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #0056D3 0%, #4285F4 100%);">
+                        <span class="course-icon">📈</span>
+                        <div class="course-level">Intermediate</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Business - Coursera</div>
+                        <h3 class="course-title">Financial Markets by Yale University</h3>
+                        <p class="course-description">An overview of financial markets and institutions, behavioral economics, and financial engineering principles including insurance, banking, and real estate.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 33 hours</div>
+                            <div class="course-meta-item">👥 560k students</div>
+                            <div class="course-meta-item">⭐ 4.6 (25k)</div>
+                            <div class="course-meta-item">🏆 Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">Free</span>
+                                <span class="course-price-original">$49</span>
+                            </div>
+                            <a href="https://www.coursera.org/learn/financial-markets-global" class="enroll-btn" target="_blank">Learn Free</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #0056D3 0%, #4285F4 100%);">
+                        <span class="course-icon">🔍</span>
+                        <div class="course-level">Advanced</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Data Science - Coursera</div>
+                        <h3 class="course-title">Deep Learning Specialization</h3>
+                        <p class="course-description">Master Deep Learning and break into AI. Build neural networks and lead successful machine learning projects. Course by deeplearning.ai.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 120 hours</div>
+                            <div class="course-meta-item">👥 950k students</div>
+                            <div class="course-meta-item">⭐ 4.8 (150k)</div>
+                            <div class="course-meta-item">🏆 Specialization Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$49/month</span>
+                            </div>
+                            <a href="https://www.coursera.org/specializations/deep-learning" class="enroll-btn" target="_blank">Master AI</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UDEMY COURSES -->
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #EC5252 0%, #A92CC6 100%);">
+                        <span class="course-icon">🐍</span>
+                        <div class="course-level">Beginner</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Programming - Udemy</div>
+                        <h3 class="course-title">Complete Python Bootcamp</h3>
+                        <p class="course-description">Learn Python like a Professional! Start from the basics and go all the way to creating your own applications and games!</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 24 hours</div>
+                            <div class="course-meta-item">👥 1.8M students</div>
+                            <div class="course-meta-item">⭐ 4.6 (450k)</div>
+                            <div class="course-meta-item">🏆 Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$84.99</span>
+                                <span class="course-price-original">$199.99</span>
+                            </div>
+                            <a href="https://www.udemy.com/course/complete-python-bootcamp/" class="enroll-btn" target="_blank">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #EC5252 0%, #A92CC6 100%);">
+                        <span class="course-icon">⚛️</span>
+                        <div class="course-level">Intermediate</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Web Development - Udemy</div>
+                        <h3 class="course-title">React - The Complete Guide</h3>
+                        <p class="course-description">Dive in and learn React.js from scratch! Learn Reactjs, Hooks, Redux, React Routing, Animations, Next.js and way more!</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 48 hours</div>
+                            <div class="course-meta-item">👥 765k students</div>
+                            <div class="course-meta-item">⭐ 4.6 (240k)</div>
+                            <div class="course-meta-item">🏆 Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$89.99</span>
+                                <span class="course-price-original">$199.99</span>
+                            </div>
+                            <a href="https://www.udemy.com/course/react-the-complete-guide-incl-redux/" class="enroll-btn" target="_blank">Master React</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #EC5252 0%, #A92CC6 100%);">
+                        <span class="course-icon">🎨</span>
+                        <div class="course-level">Beginner</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Design - Udemy</div>
+                        <h3 class="course-title">Adobe Photoshop CC Masterclass</h3>
+                        <p class="course-description">Learn Adobe Photoshop CC from scratch to advanced level with practical projects and real-world examples.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 22 hours</div>
+                            <div class="course-meta-item">👥 320k students</div>
+                            <div class="course-meta-item">⭐ 4.5 (78k)</div>
+                            <div class="course-meta-item">🏆 Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$74.99</span>
+                                <span class="course-price-original">$199.99</span>
+                            </div>
+                            <a href="https://www.udemy.com/course/adobe-photoshop-cc-essentials-training-course/" class="enroll-btn" target="_blank">Create Art</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #EC5252 0%, #A92CC6 100%);">
+                        <span class="course-icon">☁️</span>
+                        <div class="course-level">Advanced</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Cloud Computing - Udemy</div>
+                        <h3 class="course-title">AWS Certified Solutions Architect</h3>
+                        <p class="course-description">Pass the AWS Certified Solutions Architect Associate SAA-C03 Exam! Complete course with hands-on labs and practice tests.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 28 hours</div>
+                            <div class="course-meta-item">👥 890k students</div>
+                            <div class="course-meta-item">⭐ 4.7 (310k)</div>
+                            <div class="course-meta-item">🏆 AWS Certification</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$94.99</span>
+                                <span class="course-price-original">$199.99</span>
+                            </div>
+                            <a href="https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/" class="enroll-btn" target="_blank">Get Certified</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- EDX COURSES -->
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #1E3B82 0%, #7C3AED 100%);">
+                        <span class="course-icon">🧠</span>
+                        <div class="course-level">Intermediate</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Computer Science - edX</div>
+                        <h3 class="course-title">CS50: Introduction to Computer Science</h3>
+                        <p class="course-description">Harvard University's introduction to computer science and programming. Learn to think algorithmically and solve problems efficiently.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 60 hours</div>
+                            <div class="course-meta-item">👥 4.2M students</div>
+                            <div class="course-meta-item">⭐ 4.8 (85k)</div>
+                            <div class="course-meta-item">🏆 Verified Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">Free</span>
+                                <span class="course-price-original">$99</span>
+                            </div>
+                            <a href="https://www.edx.org/course/introduction-computer-science-harvardx-cs50x" class="enroll-btn" target="_blank">Start Free</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #1E3B82 0%, #7C3AED 100%);">
+                        <span class="course-icon">🔬</span>
+                        <div class="course-level">Advanced</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Data Science - edX</div>
+                        <h3 class="course-title">MIT Introduction to Data Science</h3>
+                        <p class="course-description">Learn foundational data science skills from MIT. Cover statistics, machine learning, and data visualization with Python.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 90 hours</div>
+                            <div class="course-meta-item">👥 850k students</div>
+                            <div class="course-meta-item">⭐ 4.7 (42k)</div>
+                            <div class="course-meta-item">🏆 MicroMasters</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$300</span>
+                                <span class="course-price-original">$1,500</span>
+                            </div>
+                            <a href="https://www.edx.org/micromasters/mitx-statistics-and-data-science" class="enroll-btn" target="_blank">Earn Degree</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #1E3B82 0%, #7C3AED 100%);">
+                        <span class="course-icon">📊</span>
+                        <div class="course-level">Beginner</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Business - edX</div>
+                        <h3 class="course-title">Berkeley Business Analytics</h3>
+                        <p class="course-description">UC Berkeley's comprehensive business analytics program. Learn data-driven decision making and strategic business insights.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 75 hours</div>
+                            <div class="course-meta-item">👥 125k students</div>
+                            <div class="course-meta-item">⭐ 4.5 (15k)</div>
+                            <div class="course-meta-item">🏆 Professional Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$99</span>
+                                <span class="course-price-original">$500</span>
+                            </div>
+                            <a href="https://www.edx.org/professional-certificate/uc-berkeleyx-business-analytics" class="enroll-btn" target="_blank">Advance Career</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LINKEDIN LEARNING COURSES -->
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #0A66C2 0%, #2867B2 100%);">
+                        <span class="course-icon">💼</span>
+                        <div class="course-level">Intermediate</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Leadership - LinkedIn Learning</div>
+                        <h3 class="course-title">Strategic Thinking</h3>
+                        <p class="course-description">Develop your strategic thinking skills to become a better leader and make better decisions for your organization.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 3 hours</div>
+                            <div class="course-meta-item">👥 680k students</div>
+                            <div class="course-meta-item">⭐ 4.7 (32k)</div>
+                            <div class="course-meta-item">🏆 Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$29.99/month</span>
+                            </div>
+                            <a href="https://www.linkedin.com/learning/strategic-thinking" class="enroll-btn" target="_blank">Lead Better</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #0A66C2 0%, #2867B2 100%);">
+                        <span class="course-icon">📄</span>
+                        <div class="course-level">Beginner</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Office Productivity - LinkedIn Learning</div>
+                        <h3 class="course-title">Excel Essential Training</h3>
+                        <p class="course-description">Master Microsoft Excel from basics to advanced features. Learn formulas, pivot tables, charts, and data analysis techniques.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 8 hours</div>
+                            <div class="course-meta-item">👥 1.2M students</div>
+                            <div class="course-meta-item">⭐ 4.6 (95k)</div>
+                            <div class="course-meta-item">🏆 Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$29.99/month</span>
+                            </div>
+                            <a href="https://www.linkedin.com/learning/excel-essential-training-office-365-microsoft-365" class="enroll-btn" target="_blank">Master Excel</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #0A66C2 0%, #2867B2 100%);">
+                        <span class="course-icon">📊</span>
+                        <div class="course-level">Advanced</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Data Analysis - LinkedIn Learning</div>
+                        <h3 class="course-title">Power BI Essential Training</h3>
+                        <p class="course-description">Learn Microsoft Power BI to create stunning data visualizations and business intelligence reports that drive decision-making.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 6 hours</div>
+                            <div class="course-meta-item">👥 450k students</div>
+                            <div class="course-meta-item">⭐ 4.5 (28k)</div>
+                            <div class="course-meta-item">🏆 Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$29.99/month</span>
+                            </div>
+                            <a href="https://www.linkedin.com/learning/power-bi-essential-training" class="enroll-btn" target="_blank">Visualize Data</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MASTERCLASS COURSES -->
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #000000 0%, #FF6B35 100%);">
+                        <span class="course-icon">🎬</span>
+                        <div class="course-level">Expert</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Entertainment - MasterClass</div>
+                        <h3 class="course-title">Martin Scorsese Teaches Filmmaking</h3>
+                        <p class="course-description">Learn the art of filmmaking from legendary director Martin Scorsese. Discover his approach to storytelling, editing, and directing.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 3.5 hours</div>
+                            <div class="course-meta-item">👥 250k students</div>
+                            <div class="course-meta-item">⭐ 4.8 (12k)</div>
+                            <div class="course-meta-item">🏆 MasterClass Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$180/year</span>
+                            </div>
+                            <a href="https://www.masterclass.com/classes/martin-scorsese-teaches-filmmaking" class="enroll-btn" target="_blank">Learn from Master</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #000000 0%, #FF6B35 100%);">
+                        <span class="course-icon">📝</span>
+                        <div class="course-level">Expert</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Writing - MasterClass</div>
+                        <h3 class="course-title">Neil Gaiman Teaches Storytelling</h3>
+                        <p class="course-description">Discover Neil Gaiman's approach to character development, world-building, and creating compelling narratives that captivate readers.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 4.5 hours</div>
+                            <div class="course-meta-item">👥 320k students</div>
+                            <div class="course-meta-item">⭐ 4.9 (18k)</div>
+                            <div class="course-meta-item">🏆 MasterClass Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$180/year</span>
+                            </div>
+                            <a href="https://www.masterclass.com/classes/neil-gaiman-teaches-the-art-of-storytelling" class="enroll-btn" target="_blank">Tell Stories</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #000000 0%, #FF6B35 100%);">
+                        <span class="course-icon">🍳</span>
+                        <div class="course-level">Expert</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Culinary Arts - MasterClass</div>
+                        <h3 class="course-title">Gordon Ramsay Teaches Cooking</h3>
+                        <p class="course-description">Learn essential cooking techniques from Gordon Ramsay. Master knife skills, flavor combinations, and restaurant-quality dishes.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 4 hours</div>
+                            <div class="course-meta-item">👥 580k students</div>
+                            <div class="course-meta-item">⭐ 4.7 (35k)</div>
+                            <div class="course-meta-item">🏆 MasterClass Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$180/year</span>
+                            </div>
+                            <a href="https://www.masterclass.com/classes/gordon-ramsay-teaches-cooking" class="enroll-btn" target="_blank">Cook Like Pro</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FUTURELEARN COURSES -->
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #DE3A80 0%, #E91E63 100%);">
+                        <span class="course-icon">🧬</span>
+                        <div class="course-level">Intermediate</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Science - FutureLearn</div>
+                        <h3 class="course-title">Introduction to Genomics</h3>
+                        <p class="course-description">Explore the world of genomics with University of Edinburgh. Understand DNA sequencing, genetic variation, and personalized medicine.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 28 hours</div>
+                            <div class="course-meta-item">👥 185k students</div>
+                            <div class="course-meta-item">⭐ 4.6 (8.5k)</div>
+                            <div class="course-meta-item">🏆 Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">Free</span>
+                                <span class="course-price-original">£49</span>
+                            </div>
+                            <a href="https://www.futurelearn.com/courses/introduction-to-genomics" class="enroll-btn" target="_blank">Explore DNA</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #DE3A80 0%, #E91E63 100%);">
+                        <span class="course-icon">🌍</span>
+                        <div class="course-level">Beginner</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Environment - FutureLearn</div>
+                        <h3 class="course-title">Climate Change & Health</h3>
+                        <p class="course-description">Understand the health impacts of climate change with Yale University. Learn about adaptation strategies and public health responses.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 21 hours</div>
+                            <div class="course-meta-item">👥 95k students</div>
+                            <div class="course-meta-item">⭐ 4.4 (4.2k)</div>
+                            <div class="course-meta-item">🏆 Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">Free</span>
+                                <span class="course-price-original">£49</span>
+                            </div>
+                            <a href="https://www.futurelearn.com/courses/climate-change-health" class="enroll-btn" target="_blank">Save Planet</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #DE3A80 0%, #E91E63 100%);">
+                        <span class="course-icon">💡</span>
+                        <div class="course-level">Advanced</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Innovation - FutureLearn</div>
+                        <h3 class="course-title">Innovation Management</h3>
+                        <p class="course-description">Learn to manage innovation processes in organizations. Discover how to foster creativity and implement innovative solutions.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 42 hours</div>
+                            <div class="course-meta-item">👥 75k students</div>
+                            <div class="course-meta-item">⭐ 4.5 (3.8k)</div>
+                            <div class="course-meta-item">🏆 Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">£199</span>
+                                <span class="course-price-original">£399</span>
+                            </div>
+                            <a href="https://www.futurelearn.com/courses/innovation-management" class="enroll-btn" target="_blank">Innovate Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SKILLSHARE COURSES -->
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #00D4AA 0%, #00A085 100%);">
+                        <span class="course-icon">🎨</span>
+                        <div class="course-level">Beginner</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Creative - Skillshare</div>
+                        <h3 class="course-title">Logo Design with Illustrator</h3>
+                        <p class="course-description">Master logo design fundamentals and create professional logos using Adobe Illustrator. Learn typography, color theory, and branding.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 12 hours</div>
+                            <div class="course-meta-item">👥 450k students</div>
+                            <div class="course-meta-item">⭐ 4.7 (28k)</div>
+                            <div class="course-meta-item">🏆 Project Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$99/year</span>
+                            </div>
+                            <a href="https://www.skillshare.com/classes/Logo-Design-with-Adobe-Illustrator" class="enroll-btn" target="_blank">Design Logos</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #00D4AA 0%, #00A085 100%);">
+                        <span class="course-icon">📸</span>
+                        <div class="course-level">Intermediate</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Photography - Skillshare</div>
+                        <h3 class="course-title">Mobile Photography Masterclass</h3>
+                        <p class="course-description">Create stunning photos with just your smartphone. Learn composition, lighting, editing, and storytelling through mobile photography.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 8 hours</div>
+                            <div class="course-meta-item">👥 290k students</div>
+                            <div class="course-meta-item">⭐ 4.6 (18k)</div>
+                            <div class="course-meta-item">🏆 Project Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$99/year</span>
+                            </div>
+                            <a href="https://www.skillshare.com/classes/Mobile-Photography-Masterclass" class="enroll-btn" target="_blank">Capture Moments</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #00D4AA 0%, #00A085 100%);">
+                        <span class="course-icon">✍️</span>
+                        <div class="course-level">Beginner</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Writing - Skillshare</div>
+                        <h3 class="course-title">Creative Writing: Storytelling</h3>
+                        <p class="course-description">Develop your storytelling skills through creative writing exercises. Learn character development, plot structure, and narrative techniques.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 6 hours</div>
+                            <div class="course-meta-item">👥 180k students</div>
+                            <div class="course-meta-item">⭐ 4.5 (12k)</div>
+                            <div class="course-meta-item">🏆 Project Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$99/year</span>
+                            </div>
+                            <a href="https://www.skillshare.com/classes/Creative-Writing-Storytelling" class="enroll-btn" target="_blank">Write Stories</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MORE COURSERA COURSES -->
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #0056D3 0%, #4285F4 100%);">
+                        <span class="course-icon">🏥</span>
+                        <div class="course-level">Beginner</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Healthcare - Coursera</div>
+                        <h3 class="course-title">Healthcare Data Analytics</h3>
+                        <p class="course-description">Learn to analyze healthcare data using statistical methods and machine learning. Improve patient outcomes through data-driven insights.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 45 hours</div>
+                            <div class="course-meta-item">👥 120k students</div>
+                            <div class="course-meta-item">⭐ 4.5 (8.2k)</div>
+                            <div class="course-meta-item">🏆 Specialization</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$49/month</span>
+                            </div>
+                            <a href="https://www.coursera.org/specializations/healthcare-data-analytics" class="enroll-btn" target="_blank">Heal with Data</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #0056D3 0%, #4285F4 100%);">
+                        <span class="course-icon">🌐</span>
+                        <div class="course-level">Intermediate</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Language - Coursera</div>
+                        <h3 class="course-title">English for Business Communication</h3>
+                        <p class="course-description">Improve your English communication skills for professional settings. Learn business writing, presentations, and meeting skills.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 25 hours</div>
+                            <div class="course-meta-item">👥 350k students</div>
+                            <div class="course-meta-item">⭐ 4.6 (22k)</div>
+                            <div class="course-meta-item">🏆 Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">Free</span>
+                                <span class="course-price-original">$49</span>
+                            </div>
+                            <a href="https://www.coursera.org/learn/business-english-intro" class="enroll-btn" target="_blank">Speak Business</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #0056D3 0%, #4285F4 100%);">
+                        <span class="course-icon">⚡</span>
+                        <div class="course-level">Advanced</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Engineering - Coursera</div>
+                        <h3 class="course-title">Renewable Energy Technology</h3>
+                        <p class="course-description">Explore renewable energy systems including solar, wind, and hydroelectric power. Design sustainable energy solutions for the future.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 65 hours</div>
+                            <div class="course-meta-item">👥 85k students</div>
+                            <div class="course-meta-item">⭐ 4.4 (5.8k)</div>
+                            <div class="course-meta-item">🏆 Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$79/month</span>
+                            </div>
+                            <a href="https://www.coursera.org/specializations/renewable-energy" class="enroll-btn" target="_blank">Power Future</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MORE UDEMY COURSES -->
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #EC5252 0%, #A92CC6 100%);">
+                        <span class="course-icon">📱</span>
+                        <div class="course-level">Intermediate</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Mobile Development - Udemy</div>
+                        <h3 class="course-title">iOS App Development with Swift</h3>
+                        <p class="course-description">Build iOS apps from scratch using Swift and Xcode. Learn iOS design patterns, Core Data, networking, and App Store deployment.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 42 hours</div>
+                            <div class="course-meta-item">👥 480k students</div>
+                            <div class="course-meta-item">⭐ 4.5 (125k)</div>
+                            <div class="course-meta-item">🏆 Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$94.99</span>
+                                <span class="course-price-original">$199.99</span>
+                            </div>
+                            <a href="https://www.udemy.com/course/ios-13-app-development-bootcamp/" class="enroll-btn" target="_blank">Build iOS Apps</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #EC5252 0%, #A92CC6 100%);">
+                        <span class="course-icon">🎯</span>
+                        <div class="course-level">Beginner</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Marketing - Udemy</div>
+                        <h3 class="course-title">Complete Digital Marketing Course</h3>
+                        <p class="course-description">Master 12 digital marketing courses in 1: SEO, YouTube, Email, Facebook, Instagram, Google Ads, Google Analytics & more!</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 23 hours</div>
+                            <div class="course-meta-item">👥 650k students</div>
+                            <div class="course-meta-item">⭐ 4.4 (168k)</div>
+                            <div class="course-meta-item">🏆 Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$84.99</span>
+                                <span class="course-price-original">$199.99</span>
+                            </div>
+                            <a href="https://www.udemy.com/course/learn-digital-marketing-course/" class="enroll-btn" target="_blank">Market Online</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #EC5252 0%, #A92CC6 100%);">
+                        <span class="course-icon">🎵</span>
+                        <div class="course-level">Beginner</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Music Production - Udemy</div>
+                        <h3 class="course-title">Music Production in Logic Pro X</h3>
+                        <p class="course-description">Learn to produce professional music using Logic Pro X. Master recording, editing, mixing, and mastering techniques.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 18 hours</div>
+                            <div class="course-meta-item">👥 155k students</div>
+                            <div class="course-meta-item">⭐ 4.6 (35k)</div>
+                            <div class="course-meta-item">🏆 Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$79.99</span>
+                                <span class="course-price-original">$199.99</span>
+                            </div>
+                            <a href="https://www.udemy.com/course/logic-pro-x-10-5/" class="enroll-btn" target="_blank">Make Music</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #EC5252 0%, #A92CC6 100%);">
+                        <span class="course-icon">🔐</span>
+                        <div class="course-level">Advanced</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Cybersecurity - Udemy</div>
+                        <h3 class="course-title">Ethical Hacking & Penetration Testing</h3>
+                        <p class="course-description">Learn ethical hacking and penetration testing from scratch. Master Kali Linux, network security, and vulnerability assessment.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 15 hours</div>
+                            <div class="course-meta-item">👥 420k students</div>
+                            <div class="course-meta-item">⭐ 4.5 (88k)</div>
+                            <div class="course-meta-item">🏆 Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$89.99</span>
+                                <span class="course-price-original">$199.99</span>
+                            </div>
+                            <a href="https://www.udemy.com/course/learn-ethical-hacking-from-scratch/" class="enroll-btn" target="_blank">Hack Ethically</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MORE EDX COURSES -->
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #1E3B82 0%, #7C3AED 100%);">
+                        <span class="course-icon">🏛️</span>
+                        <div class="course-level">Intermediate</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Law - edX</div>
+                        <h3 class="course-title">Introduction to International Law</h3>
+                        <p class="course-description">Explore international law principles with University of Cambridge. Understand treaties, human rights, and global governance.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 35 hours</div>
+                            <div class="course-meta-item">👥 65k students</div>
+                            <div class="course-meta-item">⭐ 4.3 (3.2k)</div>
+                            <div class="course-meta-item">🏆 Verified Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$99</span>
+                                <span class="course-price-original">$249</span>
+                            </div>
+                            <a href="https://www.edx.org/course/introduction-to-international-law" class="enroll-btn" target="_blank">Learn Law</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #1E3B82 0%, #7C3AED 100%);">
+                        <span class="course-icon">🎭</span>
+                        <div class="course-level">Beginner</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Arts - edX</div>
+                        <h3 class="course-title">Introduction to Art History</h3>
+                        <p class="course-description">Discover art history from ancient civilizations to contemporary works. Analyze artistic movements and cultural contexts.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 40 hours</div>
+                            <div class="course-meta-item">👥 145k students</div>
+                            <div class="course-meta-item">⭐ 4.6 (12k)</div>
+                            <div class="course-meta-item">🏆 Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">Free</span>
+                                <span class="course-price-original">$99</span>
+                            </div>
+                            <a href="https://www.edx.org/course/introduction-to-art-history" class="enroll-btn" target="_blank">Explore Art</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #1E3B82 0%, #7C3AED 100%);">
+                        <span class="course-icon">🧪</span>
+                        <div class="course-level">Advanced</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Chemistry - edX</div>
+                        <h3 class="course-title">Organic Chemistry by MIT</h3>
+                        <p class="course-description">Master organic chemistry principles with MIT. Learn molecular structures, reactions, and mechanisms essential for advanced chemistry.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 80 hours</div>
+                            <div class="course-meta-item">👥 125k students</div>
+                            <div class="course-meta-item">⭐ 4.7 (18k)</div>
+                            <div class="course-meta-item">🏆 Verified Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$149</span>
+                                <span class="course-price-original">$299</span>
+                            </div>
+                            <a href="https://www.edx.org/course/organic-chemistry" class="enroll-btn" target="_blank">Master Chemistry</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MORE LINKEDIN LEARNING COURSES -->
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #0A66C2 0%, #2867B2 100%);">
+                        <span class="course-icon">📝</span>
+                        <div class="course-level">Intermediate</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Communication - LinkedIn Learning</div>
+                        <h3 class="course-title">Public Speaking Foundations</h3>
+                        <p class="course-description">Build confidence in public speaking. Learn to overcome anxiety, structure presentations, and engage your audience effectively.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 4 hours</div>
+                            <div class="course-meta-item">👥 850k students</div>
+                            <div class="course-meta-item">⭐ 4.8 (65k)</div>
+                            <div class="course-meta-item">🏆 Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$29.99/month</span>
+                            </div>
+                            <a href="https://www.linkedin.com/learning/public-speaking-foundations" class="enroll-btn" target="_blank">Speak Confidently</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #0A66C2 0%, #2867B2 100%);">
+                        <span class="course-icon">🎯</span>
+                        <div class="course-level">Advanced</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Project Management - LinkedIn Learning</div>
+                        <h3 class="course-title">Project Management Professional (PMP)®</h3>
+                        <p class="course-description">Prepare for the PMP certification exam. Master project management methodologies, risk management, and stakeholder communication.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 12 hours</div>
+                            <div class="course-meta-item">👥 420k students</div>
+                            <div class="course-meta-item">⭐ 4.6 (38k)</div>
+                            <div class="course-meta-item">🏆 PMP Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$29.99/month</span>
+                            </div>
+                            <a href="https://www.linkedin.com/learning/project-management-professional-pmp-cert-prep" class="enroll-btn" target="_blank">Get PMP</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #0A66C2 0%, #2867B2 100%);">
+                        <span class="course-icon">🎨</span>
+                        <div class="course-level">Beginner</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Design - LinkedIn Learning</div>
+                        <h3 class="course-title">Graphic Design Foundations</h3>
+                        <p class="course-description">Learn the fundamental principles of graphic design. Master typography, color theory, composition, and design software basics.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 6 hours</div>
+                            <div class="course-meta-item">👥 680k students</div>
+                            <div class="course-meta-item">⭐ 4.7 (52k)</div>
+                            <div class="course-meta-item">🏆 Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$29.99/month</span>
+                            </div>
+                            <a href="https://www.linkedin.com/learning/graphic-design-foundations" class="enroll-btn" target="_blank">Design Better</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MORE MASTERCLASS COURSES -->
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #000000 0%, #FF6B35 100%);">
+                        <span class="course-icon">🎸</span>
+                        <div class="course-level">Expert</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Music - MasterClass</div>
+                        <h3 class="course-title">John Mayer Teaches Guitar</h3>
+                        <p class="course-description">Learn guitar techniques and songwriting from Grammy-winning musician John Mayer. Develop your unique musical style.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 4 hours</div>
+                            <div class="course-meta-item">👥 180k students</div>
+                            <div class="course-meta-item">⭐ 4.8 (9.5k)</div>
+                            <div class="course-meta-item">🏆 MasterClass Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$180/year</span>
+                            </div>
+                            <a href="https://www.masterclass.com/classes/john-mayer-teaches-guitar" class="enroll-btn" target="_blank">Play Guitar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #000000 0%, #FF6B35 100%);">
+                        <span class="course-icon">💼</span>
+                        <div class="course-level">Expert</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Business - MasterClass</div>
+                        <h3 class="course-title">Sara Blakely Teaches Self-Made Entrepreneurship</h3>
+                        <p class="course-description">Learn entrepreneurship from Spanx founder Sara Blakely. Discover how to build a billion-dollar business from scratch.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 3.5 hours</div>
+                            <div class="course-meta-item">👥 280k students</div>
+                            <div class="course-meta-item">⭐ 4.7 (15k)</div>
+                            <div class="course-meta-item">🏆 MasterClass Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$180/year</span>
+                            </div>
+                            <a href="https://www.masterclass.com/classes/sara-blakely-teaches-self-made-entrepreneurship" class="enroll-btn" target="_blank">Build Empire</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #000000 0%, #FF6B35 100%);">
+                        <span class="course-icon">🏀</span>
+                        <div class="course-level">Expert</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Sports - MasterClass</div>
+                        <h3 class="course-title">Stephen Curry Teaches Shooting</h3>
+                        <p class="course-description">Learn basketball fundamentals and shooting techniques from NBA superstar Stephen Curry. Master the mindset of a champion.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 3 hours</div>
+                            <div class="course-meta-item">👥 420k students</div>
+                            <div class="course-meta-item">⭐ 4.9 (28k)</div>
+                            <div class="course-meta-item">🏆 MasterClass Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$180/year</span>
+                            </div>
+                            <a href="https://www.masterclass.com/classes/stephen-curry-teaches-shooting-ball-handling-and-scoring" class="enroll-btn" target="_blank">Shoot Like Curry</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MORE FUTURELEARN COURSES -->
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #DE3A80 0%, #E91E63 100%);">
+                        <span class="course-icon">🧠</span>
+                        <div class="course-level">Intermediate</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Psychology - FutureLearn</div>
+                        <h3 class="course-title">Introduction to Psychology</h3>
+                        <p class="course-description">Explore human behavior and mental processes. Learn about cognitive psychology, social psychology, and psychological research methods.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 35 hours</div>
+                            <div class="course-meta-item">👥 280k students</div>
+                            <div class="course-meta-item">⭐ 4.5 (18k)</div>
+                            <div class="course-meta-item">🏆 Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">Free</span>
+                                <span class="course-price-original">£99</span>
+                            </div>
+                            <a href="https://www.futurelearn.com/courses/introduction-to-psychology" class="enroll-btn" target="_blank">Understand Mind</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #DE3A80 0%, #E91E63 100%);">
+                        <span class="course-icon">💳</span>
+                        <div class="course-level">Advanced</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Finance - FutureLearn</div>
+                        <h3 class="course-title">Behavioral Finance</h3>
+                        <p class="course-description">Understand how psychological factors influence financial decisions. Learn about market anomalies and investment behavior patterns.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 28 hours</div>
+                            <div class="course-meta-item">👥 95k students</div>
+                            <div class="course-meta-item">⭐ 4.3 (6.8k)</div>
+                            <div class="course-meta-item">🏆 Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">£149</span>
+                                <span class="course-price-original">£299</span>
+                            </div>
+                            <a href="https://www.futurelearn.com/courses/behavioral-finance" class="enroll-btn" target="_blank">Invest Wisely</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #DE3A80 0%, #E91E63 100%);">
+                        <span class="course-icon">🏥</span>
+                        <div class="course-level">Beginner</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Healthcare - FutureLearn</div>
+                        <h3 class="course-title">Global Health Challenges</h3>
+                        <p class="course-description">Explore major global health issues and interventions. Learn about infectious diseases, health systems, and public health policy.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 21 hours</div>
+                            <div class="course-meta-item">👥 165k students</div>
+                            <div class="course-meta-item">⭐ 4.6 (11k)</div>
+                            <div class="course-meta-item">🏆 Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">Free</span>
+                                <span class="course-price-original">£49</span>
+                            </div>
+                            <a href="https://www.futurelearn.com/courses/global-health" class="enroll-btn" target="_blank">Heal World</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MORE SKILLSHARE COURSES -->
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #00D4AA 0%, #00A085 100%);">
+                        <span class="course-icon">🎬</span>
+                        <div class="course-level">Intermediate</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Video Production - Skillshare</div>
+                        <h3 class="course-title">Video Editing with Adobe Premiere</h3>
+                        <p class="course-description">Master video editing techniques using Adobe Premiere Pro. Learn transitions, color grading, audio mixing, and storytelling.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 14 hours</div>
+                            <div class="course-meta-item">👥 320k students</div>
+                            <div class="course-meta-item">⭐ 4.6 (22k)</div>
+                            <div class="course-meta-item">🏆 Project Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$99/year</span>
+                            </div>
+                            <a href="https://www.skillshare.com/classes/video-editing-adobe-premiere" class="enroll-btn" target="_blank">Edit Videos</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #00D4AA 0%, #00A085 100%);">
+                        <span class="course-icon">🎨</span>
+                        <div class="course-level">Beginner</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Illustration - Skillshare</div>
+                        <h3 class="course-title">Digital Illustration Fundamentals</h3>
+                        <p class="course-description">Learn digital illustration using iPad Pro and Procreate. Create beautiful artwork from sketching to final illustration.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 10 hours</div>
+                            <div class="course-meta-item">👥 580k students</div>
+                            <div class="course-meta-item">⭐ 4.8 (45k)</div>
+                            <div class="course-meta-item">🏆 Project Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$99/year</span>
+                            </div>
+                            <a href="https://www.skillshare.com/classes/digital-illustration-procreate" class="enroll-btn" target="_blank">Draw Digitally</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #00D4AA 0%, #00A085 100%);">
+                        <span class="course-icon">🌱</span>
+                        <div class="course-level">Beginner</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Lifestyle - Skillshare</div>
+                        <h3 class="course-title">Indoor Plant Care & Styling</h3>
+                        <p class="course-description">Transform your home with plants. Learn plant care, propagation, and how to style your space with indoor greenery.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 4 hours</div>
+                            <div class="course-meta-item">👥 125k students</div>
+                            <div class="course-meta-item">⭐ 4.7 (8.5k)</div>
+                            <div class="course-meta-item">🏆 Project Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$99/year</span>
+                            </div>
+                            <a href="https://www.skillshare.com/classes/indoor-plant-care" class="enroll-btn" target="_blank">Grow Green</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ADDITIONAL SPECIALIZED COURSES -->
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <span class="course-icon">🤖</span>
+                        <div class="course-level">Advanced</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Artificial Intelligence</div>
+                        <h3 class="course-title">Natural Language Processing with Python</h3>
+                        <p class="course-description">Master NLP techniques including sentiment analysis, text classification, and language models. Build chatbots and text analytics systems.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 35 hours</div>
+                            <div class="course-meta-item">👥 145k students</div>
+                            <div class="course-meta-item">⭐ 4.5 (12k)</div>
+                            <div class="course-meta-item">🏆 Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$129</span>
+                                <span class="course-price-original">$299</span>
+                            </div>
+                            <a href="#contact" class="enroll-btn" target="_blank">Process Language</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <span class="course-icon">🎮</span>
+                        <div class="course-level">Intermediate</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Game Development</div>
+                        <h3 class="course-title">Unity Game Development Bootcamp</h3>
+                        <p class="course-description">Create 2D and 3D games using Unity engine. Learn C# programming, game physics, animations, and publish to multiple platforms.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 45 hours</div>
+                            <div class="course-meta-item">👥 280k students</div>
+                            <div class="course-meta-item">⭐ 4.6 (38k)</div>
+                            <div class="course-meta-item">🏆 Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$149</span>
+                                <span class="course-price-original">$299</span>
+                            </div>
+                            <a href="#contact" class="enroll-btn" target="_blank">Build Games</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <span class="course-icon">📊</span>
+                        <div class="course-level">Beginner</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Data Visualization</div>
+                        <h3 class="course-title">Tableau Desktop Specialist</h3>
+                        <p class="course-description">Master data visualization with Tableau. Create interactive dashboards, charts, and reports that tell compelling data stories.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 20 hours</div>
+                            <div class="course-meta-item">👥 195k students</div>
+                            <div class="course-meta-item">⭐ 4.4 (15k)</div>
+                            <div class="course-meta-item">🏆 Tableau Certification</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$99</span>
+                                <span class="course-price-original">$199</span>
+                            </div>
+                            <a href="#contact" class="enroll-btn" target="_blank">Visualize Data</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                        <span class="course-icon">🌐</span>
+                        <div class="course-level">Advanced</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">DevOps</div>
+                        <h3 class="course-title">Docker & Kubernetes Mastery</h3>
+                        <p class="course-description">Master containerization and orchestration. Learn Docker fundamentals, Kubernetes deployment, and CI/CD pipeline automation.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 38 hours</div>
+                            <div class="course-meta-item">👥 165k students</div>
+                            <div class="course-meta-item">⭐ 4.7 (22k)</div>
+                            <div class="course-meta-item">🏆 Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$179</span>
+                                <span class="course-price-original">$399</span>
+                            </div>
+                            <a href="#contact" class="enroll-btn" target="_blank">Deploy Apps</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ADDITIONAL POPULAR COURSES FROM VARIOUS PLATFORMS -->
+                
+                <!-- JAVASCRIPT & FRAMEWORKS -->
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #F7DF1E 0%, #FFD700 100%);">
+                        <span class="course-icon">📦</span>
+                        <div class="course-level">Intermediate</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">JavaScript - Udemy</div>
+                        <h3 class="course-title">Node.js & Express.js Complete Guide</h3>
+                        <p class="course-description">Build scalable server-side applications with Node.js and Express. Learn MongoDB, authentication, API development, and deployment.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 40 hours</div>
+                            <div class="course-meta-item">👥 420k students</div>
+                            <div class="course-meta-item">⭐ 4.6 (125k)</div>
+                            <div class="course-meta-item">🏆 Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$94.99</span>
+                                <span class="course-price-original">$199.99</span>
+                            </div>
+                            <a href="https://www.udemy.com/course/nodejs-the-complete-guide/" class="enroll-btn" target="_blank">Master Node.js</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #61DAFB 0%, #21D4FD 100%);">
+                        <span class="course-icon">⚡</span>
+                        <div class="course-level">Advanced</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Frontend - Udemy</div>
+                        <h3 class="course-title">Advanced React & Redux</h3>
+                        <p class="course-description">Master advanced React patterns, Redux Toolkit, Context API, custom hooks, and performance optimization techniques.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 35 hours</div>
+                            <div class="course-meta-item">👥 280k students</div>
+                            <div class="course-meta-item">⭐ 4.7 (95k)</div>
+                            <div class="course-meta-item">🏆 Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$89.99</span>
+                                <span class="course-price-original">$199.99</span>
+                            </div>
+                            <a href="https://www.udemy.com/course/react-redux/" class="enroll-btn" target="_blank">React Expert</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #4FC08D 0%, #42B883 100%);">
+                        <span class="course-icon">🖖</span>
+                        <div class="course-level">Intermediate</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Vue.js - Coursera</div>
+                        <h3 class="course-title">Vue.js Complete Course</h3>
+                        <p class="course-description">Learn Vue.js from basics to advanced concepts. Build modern web applications with Vuex, Vue Router, and composition API.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 28 hours</div>
+                            <div class="course-meta-item">👥 155k students</div>
+                            <div class="course-meta-item">⭐ 4.5 (18k)</div>
+                            <div class="course-meta-item">🏆 Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">Free</span>
+                                <span class="course-price-original">$49</span>
+                            </div>
+                            <a href="https://www.coursera.org/learn/vue-js" class="enroll-btn" target="_blank">Learn Vue</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MOBILE DEVELOPMENT -->
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #A4C639 0%, #8BC34A 100%);">
+                        <span class="course-icon">🤖</span>
+                        <div class="course-level">Beginner</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Android - Udemy</div>
+                        <h3 class="course-title">Android Development with Kotlin</h3>
+                        <p class="course-description">Build Android apps using Kotlin and Android Studio. Learn Material Design, MVVM architecture, and Google Play Store publishing.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 50 hours</div>
+                            <div class="course-meta-item">👥 320k students</div>
+                            <div class="course-meta-item">⭐ 4.5 (82k)</div>
+                            <div class="course-meta-item">🏆 Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$84.99</span>
+                                <span class="course-price-original">$199.99</span>
+                            </div>
+                            <a href="https://www.udemy.com/course/android-kotlin-developer/" class="enroll-btn" target="_blank">Build Android</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #02569B 0%, #0175C2 100%);">
+                        <span class="course-icon">🎯</span>
+                        <div class="course-level">Intermediate</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Flutter - Udemy</div>
+                        <h3 class="course-title">Flutter & Dart Complete Guide</h3>
+                        <p class="course-description">Create beautiful cross-platform mobile apps with Flutter. Learn Dart programming, state management, and native features.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 42 hours</div>
+                            <div class="course-meta-item">👥 385k students</div>
+                            <div class="course-meta-item">⭐ 4.6 (145k)</div>
+                            <div class="course-meta-item">🏆 Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$94.99</span>
+                                <span class="course-price-original">$199.99</span>
+                            </div>
+                            <a href="https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/" class="enroll-btn" target="_blank">Flutter Apps</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DATA SCIENCE & ANALYTICS -->
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #FF6B6B 0%, #4ECDC4 100%);">
+                        <span class="course-icon">📈</span>
+                        <div class="course-level">Intermediate</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Data Science - Coursera</div>
+                        <h3 class="course-title">Google Data Analytics Certificate</h3>
+                        <p class="course-description">Prepare for a career in data analytics with Google's certificate program. Learn R, Tableau, SQL, and data visualization.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 180 hours</div>
+                            <div class="course-meta-item">👥 650k students</div>
+                            <div class="course-meta-item">⭐ 4.7 (85k)</div>
+                            <div class="course-meta-item">🏆 Google Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$39/month</span>
+                            </div>
+                            <a href="https://www.coursera.org/professional-certificates/google-data-analytics" class="enroll-btn" target="_blank">Analyze Data</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #9B59B6 0%, #8E44AD 100%);">
+                        <span class="course-icon">🔍</span>
+                        <div class="course-level">Advanced</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Statistics - edX</div>
+                        <h3 class="course-title">Statistical Analysis with R</h3>
+                        <p class="course-description">Master statistical analysis using R programming. Learn hypothesis testing, regression analysis, and statistical modeling.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 48 hours</div>
+                            <div class="course-meta-item">👥 185k students</div>
+                            <div class="course-meta-item">⭐ 4.4 (28k)</div>
+                            <div class="course-meta-item">🏆 Verified Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$99</span>
+                                <span class="course-price-original">$249</span>
+                            </div>
+                            <a href="https://www.edx.org/course/statistical-analysis-with-r" class="enroll-btn" target="_blank">Master Statistics</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BUSINESS & ENTREPRENEURSHIP -->
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #3498DB 0%, #2980B9 100%);">
+                        <span class="course-icon">💼</span>
+                        <div class="course-level">Intermediate</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Business - LinkedIn Learning</div>
+                        <h3 class="course-title">MBA Essentials</h3>
+                        <p class="course-description">Learn core MBA concepts including strategy, finance, marketing, and operations without the MBA price tag.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 25 hours</div>
+                            <div class="course-meta-item">👥 480k students</div>
+                            <div class="course-meta-item">⭐ 4.6 (35k)</div>
+                            <div class="course-meta-item">🏆 Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$29.99/month</span>
+                            </div>
+                            <a href="https://www.linkedin.com/learning/mba-essentials" class="enroll-btn" target="_blank">Think MBA</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #E74C3C 0%, #C0392B 100%);">
+                        <span class="course-icon">🚀</span>
+                        <div class="course-level">Advanced</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Startup - Udemy</div>
+                        <h3 class="course-title">Complete Startup Business Course</h3>
+                        <p class="course-description">Launch your startup from idea to IPO. Learn business planning, funding, marketing, legal aspects, and scaling strategies.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 32 hours</div>
+                            <div class="course-meta-item">👥 125k students</div>
+                            <div class="course-meta-item">⭐ 4.3 (22k)</div>
+                            <div class="course-meta-item">🏆 Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$79.99</span>
+                                <span class="course-price-original">$199.99</span>
+                            </div>
+                            <a href="https://www.udemy.com/course/the-complete-business-plan-course" class="enroll-btn" target="_blank">Build Startup</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CREATIVE SKILLS -->
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #FF9A8B 0%, #A8E6CF 100%);">
+                        <span class="course-icon">🎨</span>
+                        <div class="course-level">Beginner</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Design - Skillshare</div>
+                        <h3 class="course-title">Brand Identity Design</h3>
+                        <p class="course-description">Create compelling brand identities from concept to completion. Learn logo design, typography, color systems, and brand guidelines.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 16 hours</div>
+                            <div class="course-meta-item">👥 385k students</div>
+                            <div class="course-meta-item">⭐ 4.7 (42k)</div>
+                            <div class="course-meta-item">🏆 Project Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$99/year</span>
+                            </div>
+                            <a href="https://www.skillshare.com/classes/brand-identity-design" class="enroll-btn" target="_blank">Design Brands</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <span class="course-icon">📐</span>
+                        <div class="course-level">Intermediate</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">3D Design - Udemy</div>
+                        <h3 class="course-title">Blender 3D Modeling Complete Course</h3>
+                        <p class="course-description">Master 3D modeling, animation, and rendering with Blender. Create stunning 3D artwork, characters, and animations.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 38 hours</div>
+                            <div class="course-meta-item">👥 295k students</div>
+                            <div class="course-meta-item">⭐ 4.6 (68k)</div>
+                            <div class="course-meta-item">🏆 Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$84.99</span>
+                                <span class="course-price-original">$199.99</span>
+                            </div>
+                            <a href="https://www.udemy.com/course/blender-tutorial/" class="enroll-btn" target="_blank">Create 3D Art</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LANGUAGES -->
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #1E88E5 0%, #1976D2 100%);">
+                        <span class="course-icon">🇺🇸</span>
+                        <div class="course-level">Beginner</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">English - Coursera</div>
+                        <h3 class="course-title">English Grammar and Style</h3>
+                        <p class="course-description">Improve your English writing skills with University of Queensland. Learn grammar fundamentals, sentence structure, and writing style.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 25 hours</div>
+                            <div class="course-meta-item">👥 285k students</div>
+                            <div class="course-meta-item">⭐ 4.5 (18k)</div>
+                            <div class="course-meta-item">🏆 Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">Free</span>
+                                <span class="course-price-original">$49</span>
+                            </div>
+                            <a href="https://www.coursera.org/learn/grammar-punctuation" class="enroll-btn" target="_blank">Perfect English</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #E91E63 0%, #AD1457 100%);">
+                        <span class="course-icon">🇪🇸</span>
+                        <div class="course-level">Beginner</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Spanish - FutureLearn</div>
+                        <h3 class="course-title">Spanish for Beginners</h3>
+                        <p class="course-description">Learn Spanish from scratch with King's College London. Master basic vocabulary, grammar, and conversation skills.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 28 hours</div>
+                            <div class="course-meta-item">👥 195k students</div>
+                            <div class="course-meta-item">⭐ 4.4 (15k)</div>
+                            <div class="course-meta-item">🏆 Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">Free</span>
+                                <span class="course-price-original">£49</span>
+                            </div>
+                            <a href="https://www.futurelearn.com/courses/spanish-for-beginners" class="enroll-btn" target="_blank">¡Habla Español!</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HEALTH & FITNESS -->
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #00BCD4 0%, #00ACC1 100%);">
+                        <span class="course-icon">🧘</span>
+                        <div class="course-level">Beginner</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Wellness - Skillshare</div>
+                        <h3 class="course-title">Mindfulness & Meditation</h3>
+                        <p class="course-description">Develop mindfulness and meditation practices. Learn stress reduction techniques, breathing exercises, and mental clarity.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 8 hours</div>
+                            <div class="course-meta-item">👥 425k students</div>
+                            <div class="course-meta-item">⭐ 4.8 (35k)</div>
+                            <div class="course-meta-item">🏆 Project Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$99/year</span>
+                            </div>
+                            <a href="https://www.skillshare.com/classes/mindfulness-meditation" class="enroll-btn" target="_blank">Find Peace</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #4CAF50 0%, #45A049 100%);">
+                        <span class="course-icon">🥗</span>
+                        <div class="course-level">Beginner</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Nutrition - Udemy</div>
+                        <h3 class="course-title">Complete Nutrition & Meal Planning</h3>
+                        <p class="course-description">Learn evidence-based nutrition principles. Create balanced meal plans, understand macronutrients, and develop healthy eating habits.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 15 hours</div>
+                            <div class="course-meta-item">👥 185k students</div>
+                            <div class="course-meta-item">⭐ 4.5 (25k)</div>
+                            <div class="course-meta-item">🏆 Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$69.99</span>
+                                <span class="course-price-original">$149.99</span>
+                            </div>
+                            <a href="https://www.udemy.com/course/nutrition-and-diet-planning/" class="enroll-btn" target="_blank">Eat Healthy</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SCIENCE & TECHNOLOGY -->
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #9C27B0 0%, #673AB7 100%);">
+                        <span class="course-icon">⚗️</span>
+                        <div class="course-level">Intermediate</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Physics - edX</div>
+                        <h3 class="course-title">Quantum Mechanics Fundamentals</h3>
+                        <p class="course-description">Explore quantum mechanics with MIT. Understand wave functions, uncertainty principle, and quantum states in modern physics.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 65 hours</div>
+                            <div class="course-meta-item">👥 95k students</div>
+                            <div class="course-meta-item">⭐ 4.6 (8.5k)</div>
+                            <div class="course-meta-item">🏆 Verified Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$199</span>
+                                <span class="course-price-original">$399</span>
+                            </div>
+                            <a href="https://www.edx.org/course/quantum-mechanics" class="enroll-btn" target="_blank">Go Quantum</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #FF5722 0%, #E64A19 100%);">
+                        <span class="course-icon">🔬</span>
+                        <div class="course-level">Advanced</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Biology - Coursera</div>
+                        <h3 class="course-title">Bioinformatics Specialization</h3>
+                        <p class="course-description">Apply computational methods to biological problems. Learn DNA sequencing analysis, protein structure prediction, and genomics.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 85 hours</div>
+                            <div class="course-meta-item">👥 125k students</div>
+                            <div class="course-meta-item">⭐ 4.4 (12k)</div>
+                            <div class="course-meta-item">🏆 Specialization Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$49/month</span>
+                            </div>
+                            <a href="https://www.coursera.org/specializations/bioinformatics" class="enroll-btn" target="_blank">Decode Life</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MUSIC & ARTS -->
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #000000 0%, #FF6B35 100%);">
+                        <span class="course-icon">🎹</span>
+                        <div class="course-level">Expert</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Music - MasterClass</div>
+                        <h3 class="course-title">Alicia Keys Teaches Songwriting</h3>
+                        <p class="course-description">Learn songwriting and music production from Grammy-winning artist Alicia Keys. Discover melody creation, lyrics, and performance.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 3.5 hours</div>
+                            <div class="course-meta-item">👥 195k students</div>
+                            <div class="course-meta-item">⭐ 4.7 (12k)</div>
+                            <div class="course-meta-item">🏆 MasterClass Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$180/year</span>
+                            </div>
+                            <a href="https://www.masterclass.com/classes/alicia-keys-teaches-songwriting-and-producing" class="enroll-btn" target="_blank">Write Songs</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #8BC34A 0%, #4CAF50 100%);">
+                        <span class="course-icon">🎭</span>
+                        <div class="course-level">Intermediate</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Acting - Skillshare</div>
+                        <h3 class="course-title">Method Acting Fundamentals</h3>
+                        <p class="course-description">Master acting techniques used by Hollywood professionals. Learn character development, emotional expression, and scene work.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 12 hours</div>
+                            <div class="course-meta-item">👥 85k students</div>
+                            <div class="course-meta-item">⭐ 4.6 (6.8k)</div>
+                            <div class="course-meta-item">🏆 Project Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$99/year</span>
+                            </div>
+                            <a href="https://www.skillshare.com/classes/method-acting" class="enroll-btn" target="_blank">Act Better</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ENVIRONMENTAL STUDIES -->
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #2E7D32 0%, #388E3C 100%);">
+                        <span class="course-icon">🌱</span>
+                        <div class="course-level">Beginner</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Environment - FutureLearn</div>
+                        <h3 class="course-title">Sustainable Development Goals</h3>
+                        <p class="course-description">Understand the UN's 17 Sustainable Development Goals. Learn about global challenges and solutions for a sustainable future.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 18 hours</div>
+                            <div class="course-meta-item">👥 385k students</div>
+                            <div class="course-meta-item">⭐ 4.5 (22k)</div>
+                            <div class="course-meta-item">🏆 Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">Free</span>
+                                <span class="course-price-original">£49</span>
+                            </div>
+                            <a href="https://www.futurelearn.com/courses/sustainable-development" class="enroll-btn" target="_blank">Save Earth</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MATHEMATICS -->
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #1E3B82 0%, #7C3AED 100%);">
+                        <span class="course-icon">📊</span>
+                        <div class="course-level">Intermediate</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Mathematics - edX</div>
+                        <h3 class="course-title">Calculus & Analytical Geometry</h3>
+                        <p class="course-description">Master calculus fundamentals with MIT. Learn limits, derivatives, integrals, and their applications in science and engineering.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 75 hours</div>
+                            <div class="course-meta-item">👥 295k students</div>
+                            <div class="course-meta-item">⭐ 4.6 (35k)</div>
+                            <div class="course-meta-item">🏆 Verified Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">Free</span>
+                                <span class="course-price-original">$99</span>
+                            </div>
+                            <a href="https://www.edx.org/course/calculus-1a-differentiation" class="enroll-btn" target="_blank">Master Calculus</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PERSONAL DEVELOPMENT -->
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #0A66C2 0%, #2867B2 100%);">
+                        <span class="course-icon">🎯</span>
+                        <div class="course-level">Beginner</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Productivity - LinkedIn Learning</div>
+                        <h3 class="course-title">Time Management Fundamentals</h3>
+                        <p class="course-description">Master time management and productivity techniques. Learn to prioritize tasks, eliminate distractions, and achieve work-life balance.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 5 hours</div>
+                            <div class="course-meta-item">👥 950k students</div>
+                            <div class="course-meta-item">⭐ 4.7 (85k)</div>
+                            <div class="course-meta-item">🏆 Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$29.99/month</span>
+                            </div>
+                            <a href="https://www.linkedin.com/learning/time-management-fundamentals" class="enroll-btn" target="_blank">Manage Time</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ADDITIONAL TECH COURSES -->
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #FF9500 0%, #FF5722 100%);">
+                        <span class="course-icon">🍎</span>
+                        <div class="course-level">Intermediate</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">iOS Development - Udemy</div>
+                        <h3 class="course-title">SwiftUI Complete Course</h3>
+                        <p class="course-description">Build modern iOS apps with SwiftUI. Learn declarative UI design, animations, Core Data integration, and iOS 15+ features.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 38 hours</div>
+                            <div class="course-meta-item">👥 185k students</div>
+                            <div class="course-meta-item">⭐ 4.6 (42k)</div>
+                            <div class="course-meta-item">🏆 Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$94.99</span>
+                                <span class="course-price-original">$199.99</span>
+                            </div>
+                            <a href="https://www.udemy.com/course/swiftui-masterclass-course-ios-development-with-swift/" class="enroll-btn" target="_blank">SwiftUI Master</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #F39C12 0%, #E67E22 100%);">
+                        <span class="course-icon">🔥</span>
+                        <div class="course-level">Advanced</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Database - Udemy</div>
+                        <h3 class="course-title">Firebase Complete Guide</h3>
+                        <p class="course-description">Master Firebase for mobile and web apps. Learn authentication, Firestore, Cloud Functions, hosting, and real-time databases.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 25 hours</div>
+                            <div class="course-meta-item">👥 125k students</div>
+                            <div class="course-meta-item">⭐ 4.5 (18k)</div>
+                            <div class="course-meta-item">🏆 Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$84.99</span>
+                                <span class="course-price-original">$199.99</span>
+                            </div>
+                            <a href="https://www.udemy.com/course/firebase-course/" class="enroll-btn" target="_blank">Firebase Pro</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FINAL BATCH OF COURSES - DIVERSE TOPICS -->
+                
+                <!-- SOCIAL MEDIA & CONTENT CREATION -->
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #E1306C 0%, #F77737 100%);">
+                        <span class="course-icon">📱</span>
+                        <div class="course-level">Beginner</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Social Media - Skillshare</div>
+                        <h3 class="course-title">Instagram Marketing Mastery</h3>
+                        <p class="course-description">Build a successful Instagram presence. Learn content strategy, hashtag research, Instagram ads, and influencer marketing.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 8 hours</div>
+                            <div class="course-meta-item">👥 385k students</div>
+                            <div class="course-meta-item">⭐ 4.6 (28k)</div>
+                            <div class="course-meta-item">🏆 Project Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$99/year</span>
+                            </div>
+                            <a href="https://www.skillshare.com/classes/instagram-marketing" class="enroll-btn" target="_blank">Grow Instagram</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #FF0000 0%, #CC0000 100%);">
+                        <span class="course-icon">📺</span>
+                        <div class="course-level">Intermediate</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Content Creation - Udemy</div>
+                        <h3 class="course-title">YouTube Creator Academy</h3>
+                        <p class="course-description">Build a successful YouTube channel from zero to monetization. Learn video production, SEO, thumbnails, and audience growth.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 22 hours</div>
+                            <div class="course-meta-item">👥 295k students</div>
+                            <div class="course-meta-item">⭐ 4.5 (48k)</div>
+                            <div class="course-meta-item">🏆 Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$79.99</span>
+                                <span class="course-price-original">$199.99</span>
+                            </div>
+                            <a href="https://www.udemy.com/course/youtube-creator-course/" class="enroll-btn" target="_blank">YouTube Success</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- E-COMMERCE & ONLINE BUSINESS -->
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #95BF47 0%, #759B2A 100%);">
+                        <span class="course-icon">🛒</span>
+                        <div class="course-level">Intermediate</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">E-commerce - Udemy</div>
+                        <h3 class="course-title">Shopify Dropshipping Mastery</h3>
+                        <p class="course-description">Build profitable dropshipping stores with Shopify. Learn product research, Facebook ads, conversion optimization, and scaling.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 18 hours</div>
+                            <div class="course-meta-item">👥 165k students</div>
+                            <div class="course-meta-item">⭐ 4.3 (25k)</div>
+                            <div class="course-meta-item">🏆 Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$89.99</span>
+                                <span class="course-price-original">$199.99</span>
+                            </div>
+                            <a href="https://www.udemy.com/course/shopify-dropshipping-course/" class="enroll-btn" target="_blank">Start Store</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #FF6900 0%, #FCB900 100%);">
+                        <span class="course-icon">📦</span>
+                        <div class="course-level">Advanced</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Amazon FBA - Udemy</div>
+                        <h3 class="course-title">Amazon FBA Complete Course</h3>
+                        <p class="course-description">Master Amazon FBA from product research to launch. Learn keyword optimization, PPC advertising, and inventory management.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 28 hours</div>
+                            <div class="course-meta-item">👥 125k students</div>
+                            <div class="course-meta-item">⭐ 4.4 (18k)</div>
+                            <div class="course-meta-item">🏆 Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$94.99</span>
+                                <span class="course-price-original">$199.99</span>
+                            </div>
+                            <a href="https://www.udemy.com/course/amazon-fba-course/" class="enroll-btn" target="_blank">Amazon Success</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FINANCE & INVESTMENT -->
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #2E7D32 0%, #1B5E20 100%);">
+                        <span class="course-icon">💰</span>
+                        <div class="course-level">Beginner</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Finance - Coursera</div>
+                        <h3 class="course-title">Personal Finance & Investing</h3>
+                        <p class="course-description">Master personal finance fundamentals. Learn budgeting, saving, investing in stocks, bonds, and retirement planning strategies.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 32 hours</div>
+                            <div class="course-meta-item">👥 485k students</div>
+                            <div class="course-meta-item">⭐ 4.6 (42k)</div>
+                            <div class="course-meta-item">🏆 Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">Free</span>
+                                <span class="course-price-original">$49</span>
+                            </div>
+                            <a href="https://www.coursera.org/learn/personal-finance" class="enroll-btn" target="_blank">Build Wealth</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);">
+                        <span class="course-icon">📈</span>
+                        <div class="course-level">Advanced</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Trading - Udemy</div>
+                        <h3 class="course-title">Stock Market Technical Analysis</h3>
+                        <p class="course-description">Master technical analysis for stock trading. Learn chart patterns, indicators, risk management, and profitable trading strategies.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 25 hours</div>
+                            <div class="course-meta-item">👥 285k students</div>
+                            <div class="course-meta-item">⭐ 4.4 (38k)</div>
+                            <div class="course-meta-item">🏆 Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$84.99</span>
+                                <span class="course-price-original">$199.99</span>
+                            </div>
+                            <a href="https://www.udemy.com/course/technical-analysis-course/" class="enroll-btn" target="_blank">Trade Smart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- REAL ESTATE -->
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #8B4513 0%, #A0522D 100%);">
+                        <span class="course-icon">🏠</span>
+                        <div class="course-level">Intermediate</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Real Estate - Udemy</div>
+                        <h3 class="course-title">Real Estate Investment Fundamentals</h3>
+                        <p class="course-description">Learn real estate investing strategies. Master property analysis, financing, rental properties, and building wealth through real estate.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 20 hours</div>
+                            <div class="course-meta-item">👥 145k students</div>
+                            <div class="course-meta-item">⭐ 4.5 (22k)</div>
+                            <div class="course-meta-item">🏆 Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$79.99</span>
+                                <span class="course-price-original">$199.99</span>
+                            </div>
+                            <a href="https://www.udemy.com/course/real-estate-investing/" class="enroll-btn" target="_blank">Invest Real Estate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- WRITING & JOURNALISM -->
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #1A237E 0%, #3F51B5 100%);">
+                        <span class="course-icon">✍️</span>
+                        <div class="course-level">Beginner</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Writing - Coursera</div>
+                        <h3 class="course-title">Creative Writing Specialization</h3>
+                        <p class="course-description">Develop your creative writing skills with Wesleyan University. Learn fiction, poetry, creative nonfiction, and publishing strategies.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 45 hours</div>
+                            <div class="course-meta-item">👥 285k students</div>
+                            <div class="course-meta-item">⭐ 4.6 (25k)</div>
+                            <div class="course-meta-item">🏆 Specialization Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$49/month</span>
+                            </div>
+                            <a href="https://www.coursera.org/specializations/creative-writing" class="enroll-btn" target="_blank">Write Creatively</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #424242 0%, #616161 100%);">
+                        <span class="course-icon">📰</span>
+                        <div class="course-level">Intermediate</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Journalism - edX</div>
+                        <h3 class="course-title">Digital Journalism & Media</h3>
+                        <p class="course-description">Learn modern journalism practices with University of California. Master digital storytelling, fact-checking, and media ethics.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 35 hours</div>
+                            <div class="course-meta-item">👥 85k students</div>
+                            <div class="course-meta-item">⭐ 4.4 (8.5k)</div>
+                            <div class="course-meta-item">🏆 Verified Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$99</span>
+                                <span class="course-price-original">$249</span>
+                            </div>
+                            <a href="https://www.edx.org/course/digital-journalism" class="enroll-btn" target="_blank">Report News</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ARTIFICIAL INTELLIGENCE & ROBOTICS -->
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #00BCD4 0%, #0097A7 100%);">
+                        <span class="course-icon">🤖</span>
+                        <div class="course-level">Advanced</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Robotics - edX</div>
+                        <h3 class="course-title">Introduction to Robotics</h3>
+                        <p class="course-description">Explore robotics fundamentals with University of Pennsylvania. Learn robot kinematics, control systems, and autonomous navigation.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 55 hours</div>
+                            <div class="course-meta-item">👥 125k students</div>
+                            <div class="course-meta-item">⭐ 4.5 (15k)</div>
+                            <div class="course-meta-item">🏆 Verified Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$149</span>
+                                <span class="course-price-original">$299</span>
+                            </div>
+                            <a href="https://www.edx.org/course/robotics-fundamentals" class="enroll-btn" target="_blank">Build Robots</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PHILOSOPHY & HISTORY -->
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #8E24AA 0%, #7B1FA2 100%);">
+                        <span class="course-icon">🎭</span>
+                        <div class="course-level">Beginner</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Philosophy - Coursera</div>
+                        <h3 class="course-title">Introduction to Philosophy</h3>
+                        <p class="course-description">Explore fundamental philosophical questions with University of Edinburgh. Examine ethics, metaphysics, and theories of knowledge.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 28 hours</div>
+                            <div class="course-meta-item">👥 485k students</div>
+                            <div class="course-meta-item">⭐ 4.7 (52k)</div>
+                            <div class="course-meta-item">🏆 Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">Free</span>
+                                <span class="course-price-original">$49</span>
+                            </div>
+                            <a href="https://www.coursera.org/learn/philosophy" class="enroll-btn" target="_blank">Think Deep</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #6D4C41 0%, #5D4037 100%);">
+                        <span class="course-icon">🏛️</span>
+                        <div class="course-level">Intermediate</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">History - FutureLearn</div>
+                        <h3 class="course-title">World War II: A History</h3>
+                        <p class="course-description">Explore WWII from multiple perspectives with King's College London. Analyze causes, major events, and lasting impacts on society.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 32 hours</div>
+                            <div class="course-meta-item">👥 285k students</div>
+                            <div class="course-meta-item">⭐ 4.6 (18k)</div>
+                            <div class="course-meta-item">🏆 Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">Free</span>
+                                <span class="course-price-original">£49</span>
+                            </div>
+                            <a href="https://www.futurelearn.com/courses/world-war-2" class="enroll-btn" target="_blank">Learn History</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- EDUCATION & TEACHING -->
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #FF5722 0%, #D84315 100%);">
+                        <span class="course-icon">👨‍🏫</span>
+                        <div class="course-level">Beginner</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Education - Coursera</div>
+                        <h3 class="course-title">Teaching Online: Effective Course Design</h3>
+                        <p class="course-description">Design engaging online courses. Learn instructional design principles, video creation, assessment strategies, and student engagement.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 22 hours</div>
+                            <div class="course-meta-item">👥 185k students</div>
+                            <div class="course-meta-item">⭐ 4.5 (15k)</div>
+                            <div class="course-meta-item">🏆 Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">Free</span>
+                                <span class="course-price-original">$49</span>
+                            </div>
+                            <a href="https://www.coursera.org/learn/teaching-online" class="enroll-btn" target="_blank">Teach Online</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AGRICULTURE & SUSTAINABILITY -->
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #689F38 0%, #558B2F 100%);">
+                        <span class="course-icon">🌾</span>
+                        <div class="course-level">Intermediate</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Agriculture - FutureLearn</div>
+                        <h3 class="course-title">Sustainable Agriculture & Food Security</h3>
+                        <p class="course-description">Explore sustainable farming practices and global food security challenges. Learn about crop management, soil health, and climate adaptation.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 25 hours</div>
+                            <div class="course-meta-item">👥 95k students</div>
+                            <div class="course-meta-item">⭐ 4.4 (8.2k)</div>
+                            <div class="course-meta-item">🏆 Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">Free</span>
+                                <span class="course-price-original">£49</span>
+                            </div>
+                            <a href="https://www.futurelearn.com/courses/sustainable-agriculture" class="enroll-btn" target="_blank">Feed World</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SPORTS & FITNESS -->
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #FF4444 0%, #CC0000 100%);">
+                        <span class="course-icon">💪</span>
+                        <div class="course-level">Beginner</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Fitness - Skillshare</div>
+                        <h3 class="course-title">Personal Trainer Certification Prep</h3>
+                        <p class="course-description">Prepare for personal trainer certification. Learn exercise physiology, program design, nutrition basics, and client assessment techniques.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 16 hours</div>
+                            <div class="course-meta-item">👥 65k students</div>
+                            <div class="course-meta-item">⭐ 4.5 (5.8k)</div>
+                            <div class="course-meta-item">🏆 Project Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$99/year</span>
+                            </div>
+                            <a href="https://www.skillshare.com/classes/personal-trainer-certification" class="enroll-btn" target="_blank">Train Others</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TRAVEL & HOSPITALITY -->
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #00BCD4 0%, #00838F 100%);">
+                        <span class="course-icon">✈️</span>
+                        <div class="course-level">Beginner</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Hospitality - Coursera</div>
+                        <h3 class="course-title">Hotel Management Fundamentals</h3>
+                        <p class="course-description">Learn hospitality industry basics with École hôtelière de Lausanne. Understand hotel operations, customer service, and revenue management.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 18 hours</div>
+                            <div class="course-meta-item">👥 125k students</div>
+                            <div class="course-meta-item">⭐ 4.5 (12k)</div>
+                            <div class="course-meta-item">🏆 Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">Free</span>
+                                <span class="course-price-original">$49</span>
+                            </div>
+                            <a href="https://www.coursera.org/learn/hotel-management" class="enroll-btn" target="_blank">Manage Hotels</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FINAL EXPERT LEVEL COURSES -->
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #000000 0%, #FF6B35 100%);">
+                        <span class="course-icon">🎯</span>
+                        <div class="course-level">Expert</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Strategy - MasterClass</div>
+                        <h3 class="course-title">Bob Iger Teaches Business Strategy</h3>
+                        <p class="course-description">Learn leadership and business strategy from former Disney CEO Bob Iger. Master decision-making, innovation, and organizational transformation.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 4 hours</div>
+                            <div class="course-meta-item">👥 285k students</div>
+                            <div class="course-meta-item">⭐ 4.8 (22k)</div>
+                            <div class="course-meta-item">🏆 MasterClass Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$180/year</span>
+                            </div>
+                            <a href="https://www.masterclass.com/classes/bob-iger-teaches-business-strategy-and-leadership" class="enroll-btn" target="_blank">Lead Like CEO</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #FFD54F 0%, #FFC107 100%);">
+                        <span class="course-icon">⚡</span>
+                        <div class="course-level">Advanced</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Innovation - edX</div>
+                        <h3 class="course-title">Quantum Computing Fundamentals</h3>
+                        <p class="course-description">Explore quantum computing with IBM. Learn quantum algorithms, quantum gates, and programming quantum computers using Qiskit.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 45 hours</div>
+                            <div class="course-meta-item">👥 85k students</div>
+                            <div class="course-meta-item">⭐ 4.6 (8.5k)</div>
+                            <div class="course-meta-item">🏆 IBM Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$199</span>
+                                <span class="course-price-original">$499</span>
+                            </div>
+                            <a href="https://www.edx.org/course/quantum-computing-fundamentals" class="enroll-btn" target="_blank">Quantum Future</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card animate-on-scroll">
+                    <div class="course-image" style="background: linear-gradient(135deg, #9C27B0 0%, #7B1FA2 100%);">
+                        <span class="course-icon">🧬</span>
+                        <div class="course-level">Expert</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Biotechnology - Coursera</div>
+                        <h3 class="course-title">CRISPR Gene Editing Technology</h3>
+                        <p class="course-description">Master CRISPR gene editing with UC San Diego. Understand molecular biology, genetic engineering, and bioethics in modern medicine.</p>
+                        <div class="course-meta">
+                            <div class="course-meta-item">⏱ 55 hours</div>
+                            <div class="course-meta-item">👥 65k students</div>
+                            <div class="course-meta-item">⭐ 4.7 (5.2k)</div>
+                            <div class="course-meta-item">🏆 Specialization Certificate</div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="course-price-current">$79/month</span>
+                            </div>
+                            <a href="https://www.coursera.org/specializations/crispr-gene-editing" class="enroll-btn" target="_blank">Edit Genes</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -1888,7 +4201,7 @@
         <div class="container">
             <div class="cta-content animate-on-scroll">
                 <h2 class="cta-title">Ready to Transform Your Career?</h2>
-                <p class="cta-description">Join over 280 professionals who have accelerated their careers with our cutting-edge courses. Start your journey today!</p>
+                <p class="cta-description">Join over 2,850 professionals who have accelerated their careers with our cutting-edge courses from the world's top learning platforms. Start your journey today!</p>
                 <a href="#courses" class="cta-button">
                     🚀 Start Your Journey
                 </a>
